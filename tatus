@@ -1,0 +1,3659 @@
+[33mcommit e4d2c64e6d50a922b36c5df8596e7a2422e57eeb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ishanraising <ishanraising98@gmail.com>
+Date:   Thu Aug 1 19:58:48 2024 +0530
+
+    1st Commit
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7c513c2[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21"/>[m
+[32m+[m	[32m<classpathentry kind="src" path="src/main/java"/>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="owner.project.facets" value="jst.web"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>[m
+[32m+[m	[32m<classpathentry kind="output" path="build/classes"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b396ea2[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>Mini Project</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.wst.common.project.facet.core.builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.wst.validation.validationbuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.common.project.facet.core.nature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.wst.jsdt.core.jsNature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/.jsdtscope b/.settings/.jsdtscope[m
+[1mnew file mode 100644[m
+[1mindex 0000000..76c2d63[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/.jsdtscope[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry excluding="**/node_modules/*|**/*.min.js|**/bower_components/*" kind="src" path="src/main/webapp"/>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="hide" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.baseBrowserLibrary"/>[m
+[32m+[m	[32m<classpathentry kind="output" path=""/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.settings/org.eclipse.core.resources.prefs b/.settings/org.eclipse.core.resources.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..99f26c0[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.core.resources.prefs[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32mencoding/<project>=UTF-8[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3a79233[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=21[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=21[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=21[m
+[1mdiff --git a/.settings/org.eclipse.wst.common.component b/.settings/org.eclipse.wst.common.component[m
+[1mnew file mode 100644[m
+[1mindex 0000000..30422b3[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.wst.common.component[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">[m
+[32m+[m[32m    <wb-module deploy-name="Mini Project">[m
+[32m+[m[32m        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>[m
+[32m+[m[32m        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>[m
+[32m+[m[32m        <property name="context-root" value="Mini_Project"/>[m
+[32m+[m[32m        <property name="java-output-path" value="/Mini Project/build/classes"/>[m
+[32m+[m[32m    </wb-module>[m
+[32m+[m[32m</project-modules>[m
+[1mdiff --git a/.settings/org.eclipse.wst.common.project.facet.core.xml b/.settings/org.eclipse.wst.common.project.facet.core.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63862aa[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.wst.common.project.facet.core.xml[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<faceted-project>[m
+[32m+[m[32m  <runtime name="Apache Tomcat v8.5"/>[m
+[32m+[m[32m  <fixed facet="java"/>[m
+[32m+[m[32m  <fixed facet="jst.web"/>[m
+[32m+[m[32m  <fixed facet="wst.jsdt.web"/>[m
+[32m+[m[32m  <installed facet="java" version="21"/>[m
+[32m+[m[32m  <installed facet="jst.web" version="3.1"/>[m
+[32m+[m[32m  <installed facet="wst.jsdt.web" version="1.0"/>[m
+[32m+[m[32m</faceted-project>[m
+[1mdiff --git a/.settings/org.eclipse.wst.jsdt.ui.superType.container b/.settings/org.eclipse.wst.jsdt.ui.superType.container[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3bd5d0a[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.wst.jsdt.ui.superType.container[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32morg.eclipse.wst.jsdt.launching.baseBrowserLibrary[m
+\ No newline at end of file[m
+[1mdiff --git a/.settings/org.eclipse.wst.jsdt.ui.superType.name b/.settings/org.eclipse.wst.jsdt.ui.superType.name[m
+[1mnew file mode 100644[m
+[1mindex 0000000..05bd71b[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.wst.jsdt.ui.superType.name[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mWindow[m
+\ No newline at end of file[m
+[1mdiff --git a/build/classes/project/controller/BankStatementController.class b/build/classes/project/controller/BankStatementController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5521128[m
+Binary files /dev/null and b/build/classes/project/controller/BankStatementController.class differ
+[1mdiff --git a/build/classes/project/controller/CardPaymentController.class b/build/classes/project/controller/CardPaymentController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5e6dcf3[m
+Binary files /dev/null and b/build/classes/project/controller/CardPaymentController.class differ
+[1mdiff --git a/build/classes/project/controller/ChangePassword.class b/build/classes/project/controller/ChangePassword.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d4aca31[m
+Binary files /dev/null and b/build/classes/project/controller/ChangePassword.class differ
+[1mdiff --git a/build/classes/project/controller/ConfirmDetailsController.class b/build/classes/project/controller/ConfirmDetailsController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a50226e[m
+Binary files /dev/null and b/build/classes/project/controller/ConfirmDetailsController.class differ
+[1mdiff --git a/build/classes/project/controller/LogOutController.class b/build/classes/project/controller/LogOutController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..751397c[m
+Binary files /dev/null and b/build/classes/project/controller/LogOutController.class differ
+[1mdiff --git a/build/classes/project/controller/LoginController.class b/build/classes/project/controller/LoginController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c7072a5[m
+Binary files /dev/null and b/build/classes/project/controller/LoginController.class differ
+[1mdiff --git a/build/classes/project/controller/NeftController.class b/build/classes/project/controller/NeftController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1397393[m
+Binary files /dev/null and b/build/classes/project/controller/NeftController.class differ
+[1mdiff --git a/build/classes/project/controller/RechargeController.class b/build/classes/project/controller/RechargeController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5294203[m
+Binary files /dev/null and b/build/classes/project/controller/RechargeController.class differ
+[1mdiff --git a/build/classes/project/controller/RegisterController.class b/build/classes/project/controller/RegisterController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5820cb[m
+Binary files /dev/null and b/build/classes/project/controller/RegisterController.class differ
+[1mdiff --git a/build/classes/project/controller/RtgsController.class b/build/classes/project/controller/RtgsController.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c6b97d6[m
+Binary files /dev/null and b/build/classes/project/controller/RtgsController.class differ
+[1mdiff --git a/build/classes/project/controller/StatementDisplay.class b/build/classes/project/controller/StatementDisplay.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..08334f3[m
+Binary files /dev/null and b/build/classes/project/controller/StatementDisplay.class differ
+[1mdiff --git a/build/classes/project/dao/BankDao.class b/build/classes/project/dao/BankDao.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..edd09b9[m
+Binary files /dev/null and b/build/classes/project/dao/BankDao.class differ
+[1mdiff --git a/build/classes/project/dao/BankDaoImpl.class b/build/classes/project/dao/BankDaoImpl.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d0f413c[m
+Binary files /dev/null and b/build/classes/project/dao/BankDaoImpl.class differ
+[1mdiff --git a/build/classes/project/dao/DBConnection.class b/build/classes/project/dao/DBConnection.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e17bc83[m
+Binary files /dev/null and b/build/classes/project/dao/DBConnection.class differ
+[1mdiff --git a/build/classes/project/model/Card.class b/build/classes/project/model/Card.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4806496[m
+Binary files /dev/null and b/build/classes/project/model/Card.class differ
+[1mdiff --git a/build/classes/project/model/Customer.class b/build/classes/project/model/Customer.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8af1697[m
+Binary files /dev/null and b/build/classes/project/model/Customer.class differ
+[1mdiff --git a/build/classes/project/model/Login.class b/build/classes/project/model/Login.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..621642b[m
+Binary files /dev/null and b/build/classes/project/model/Login.class differ
+[1mdiff --git a/build/classes/project/model/Neft.class b/build/classes/project/model/Neft.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d5edfda[m
+Binary files /dev/null and b/build/classes/project/model/Neft.class differ
+[1mdiff --git a/build/classes/project/model/Recharge.class b/build/classes/project/model/Recharge.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63fc109[m
+Binary files /dev/null and b/build/classes/project/model/Recharge.class differ
+[1mdiff --git a/build/classes/project/model/Rtgs.class b/build/classes/project/model/Rtgs.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1fb0526[m
+Binary files /dev/null and b/build/classes/project/model/Rtgs.class differ
+[1mdiff --git a/build/classes/project/model/Transaction.class b/build/classes/project/model/Transaction.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..47059ec[m
+Binary files /dev/null and b/build/classes/project/model/Transaction.class differ
+[1mdiff --git a/src/main/java/project/controller/BankStatementController.java b/src/main/java/project/controller/BankStatementController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7c6b03e[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/BankStatementController.java[m
+[36m@@ -0,0 +1,108 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.Closeable;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.io.OutputStream;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m[32mimport javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;[m
+[32m+[m
+[32m+[m[32mimport org.apache.poi.hssf.model.Sheet;[m
+[32m+[m[32mimport org.apache.poi.hssf.model.Workbook;[m
+[32m+[m[32mimport org.apache.poi.hssf.record.formula.functions.Row;[m
+[32m+[m[32mimport org.apache.poi.hssf.usermodel.HSSFCell;[m
+[32m+[m[32mimport org.apache.poi.hssf.usermodel.HSSFRow;[m
+[32m+[m[32mimport org.apache.poi.hssf.usermodel.HSSFSheet;[m
+[32m+[m[32mimport org.apache.poi.hssf.usermodel.HSSFWorkbook;[m
+[32m+[m[32mimport org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Transaction;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class BankStatementController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/BankStatementController")[m
+[32m+[m[32mpublic class BankStatementController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#HttpServlet()[m
+[32m+[m	[32m */[m
+[32m+[m	[32mpublic BankStatementController() {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32m// TODO Auto-generated constructor stub[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mList<Customer>custList=null;[m
+[32m+[m		[32mList<Transaction>transList=new ArrayList<Transaction>();[m
+[32m+[m		[32mCustomer c=null;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32mHttpSession session=request.getSession(true);[m
+[32m+[m		[32mcustList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m		[32mif (custList != null && !custList.isEmpty()) {[m
+[32m+[m			[32mc = custList.get(0);[m
+[32m+[m		[32m} else {[m
+[32m+[m			[32mSystem.out.println("No data in List");[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m		[32mtransList=bdao.bankStatement(c.getAccNo());[m
+[32m+[m		[32mHSSFWorkbook workbook = new HSSFWorkbook();[m
+[32m+[m		[32mHSSFSheet sheet = workbook.createSheet("Transactions");[m
+[32m+[m		[32mHSSFRow headerRow = sheet.createRow(0);[m
+[32m+[m		[32mString[] columns = {"Sender Account Number", "Reciever Account Number", "Transaction Type", "Ammount"};[m
+[32m+[m		[32mfor (int i = 0; i < columns.length; i++) {[m
+[32m+[m			[32mHSSFCell cell = headerRow.createCell((short) i);[m
+[32m+[m			[32mcell.setCellValue(columns[i]);[m
+[32m+[m		[32m}[m
+[32m+[m		[32mint rowNum = 1;[m
+[32m+[m		[32mfor (Transaction t : transList) {[m
+[32m+[m			[32mHSSFRow row = sheet.createRow(rowNum++);[m
+[32m+[m			[32mrow.createCell((short) 0).setCellValue(t.getSenderAccNo());[m
+[32m+[m			[32mrow.createCell((short) 1).setCellValue(t.getRecieverAccNo());[m
+[32m+[m			[32mrow.createCell((short) 2).setCellValue(t.getTransType());[m
+[32m+[m			[32mrow.createCell((short) 3).setCellValue(t.getAmmount());[m
+[32m+[m
+[32m+[m		[32m}[m
+[32m+[m		[32mByteArrayOutputStream outputStream = new ByteArrayOutputStream();[m
+[32m+[m		[32mworkbook.write(outputStream);[m
+[32m+[m
+[32m+[m		[32mresponse.setContentType("application/vnd.ms-excel");[m
+[32m+[m		[32mresponse.setHeader("Content-Disposition", "attachment; filename=transactions.xls");[m
+[32m+[m
+[32m+[m
+[32m+[m		[32mOutputStream out = response.getOutputStream();[m
+[32m+[m		[32moutputStream.writeTo(out);[m
+[32m+[m		[32mout.close();[m
+[32m+[m
+[32m+[m		[32m//		    session.setAttribute("bankstatement", transList);[m
+[32m+[m		[32m//		   response.sendRedirect("BankStatement.jsp");[m
+[32m+[m		[32m//[m[41m		   [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/CardPaymentController.java b/src/main/java/project/controller/CardPaymentController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..92280cd[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/CardPaymentController.java[m
+[36m@@ -0,0 +1,90 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Card;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Rtgs;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class CardPaymentController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/CardPaymentController")[m
+[32m+[m[32mpublic class CardPaymentController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public CardPaymentController() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m[41m	[m
+[32m+[m		[32mint accNo=Integer.parseInt(request.getParameter("accNo"));[m
+[32m+[m		[32mint cvv=Integer.parseInt(request.getParameter("cvv"));[m
+[32m+[m		[32mint ammount=Integer.parseInt(request.getParameter("ammount"));[m
+[32m+[m[41m		[m
+[32m+[m		[32m HttpSession session=request.getSession();[m
+[32m+[m		[32m    List<Customer> custList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m		[32m    if(custList != null && !custList.isEmpty()) {[m
+[32m+[m		[32m        Customer c=custList.get(0);[m
+[32m+[m		[32m       List<Card>cardList=new ArrayList<>();[m
+[32m+[m		[32m        BankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32m        Card card=new Card(c.getAccNo(), accNo, cvv, "Card", ammount);[m
+[32m+[m		[32m        cardList.add(card);[m
+[32m+[m		[32m        boolean b=bdao.validateReciever(accNo);[m
+[32m+[m		[32m        if(b==true) {[m
+[32m+[m		[32m            int senderAccBal=bdao.accountBalance(c.getAccNo());[m
+[32m+[m		[32m            int recieverBal=bdao.accountBalance(accNo);[m
+[32m+[m		[32m            if(senderAccBal > ammount) {[m
+[32m+[m		[32m                int j=bdao.updateBalance(c.getAccNo(), senderAccBal-(int)ammount);[m
+[32m+[m		[32m                int k=bdao.updateBalance(accNo, recieverBal+(int)ammount);[m
+[32m+[m		[32m                int i=bdao.cardTransaction(cardList);[m
+[32m+[m
+[32m+[m		[32m                if(i > 0 && j > 0 && k > 0) {[m
+[32m+[m		[32m                    session.setAttribute("CardError", "Transaction Successful...!!!");[m
+[32m+[m		[32m                    response.sendRedirect("CardPayment.jsp");[m
+[32m+[m		[32m                } else {[m
+[32m+[m		[32m                    session.setAttribute("CardError", "Transaction Failed...!!!");[m
+[32m+[m		[32m                    response.sendRedirect("CardPayment.jsp");[m
+[32m+[m		[32m                }[m
+[32m+[m		[32m            } else {[m
+[32m+[m		[32m                session.setAttribute("CardError", "Insufficient Funds...!!!");[m
+[32m+[m		[32m                response.sendRedirect("CardPayment.jsp");[m
+[32m+[m		[32m            }[m
+[32m+[m		[32m        } else {[m
+[32m+[m		[32m            session.setAttribute("CardError", "Invalid Account Number...!!!");[m
+[32m+[m		[32m            response.sendRedirect("CardPayment.jsp");[m
+[32m+[m		[32m        }[m
+[32m+[m		[32m    } else {[m
+[32m+[m		[32m        session.setAttribute("CardError", "User details not found...!!!");[m
+[32m+[m		[32m        response.sendRedirect("CardPayment.jsp");[m
+[32m+[m		[32m    }[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/ChangePassword.java b/src/main/java/project/controller/ChangePassword.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6a60975[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/ChangePassword.java[m
+[36m@@ -0,0 +1,72 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class ChangePassword[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/ChangePassword")[m
+[32m+[m[32mpublic class ChangePassword extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public ChangePassword() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mString oldPass=request.getParameter("oldPass");[m
+[32m+[m		[32mString newPass=request.getParameter("newPass");[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32mint j=0;[m
+[32m+[m		[32mList<Customer>custList=null;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32mCustomer c=null;[m
+[32m+[m		[32mHttpSession session=request.getSession();[m
+[32m+[m		[32mcustList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m		[32mc=custList.get(0);[m
+[32m+[m[41m		[m
+[32m+[m		[32mString Password=bdao.getPassword(c.getAccNo());[m
+[32m+[m		[32mif(Password.equals(oldPass)) {[m
+[32m+[m			[32mj=bdao.changePassword(c.getAccNo(), newPass);[m
+[32m+[m			[32mif(j>0) {[m
+[32m+[m				[32msession.setAttribute("changePass", "Password changed..!");[m
+[32m+[m				[32mresponse.sendRedirect("Myprofile.jsp");[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32msession.setAttribute("changePass", "Password not changed..!");[m
+[32m+[m				[32mresponse.sendRedirect("Myprofile.jsp");[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32msession.setAttribute("changePass", "old password did not matched..!");[m
+[32m+[m			[32mresponse.sendRedirect("Myprofile.jsp");[m
+[32m+[m		[32m}[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/ConfirmDetailsController.java b/src/main/java/project/controller/ConfirmDetailsController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e34d4d5[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/ConfirmDetailsController.java[m
+[36m@@ -0,0 +1,68 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Recharge;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class ConfirmDetailsController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/ConfirmDetailsController")[m
+[32m+[m[32mpublic class ConfirmDetailsController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#HttpServlet()[m
+[32m+[m	[32m */[m
+[32m+[m	[32mpublic ConfirmDetailsController() {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32m// TODO Auto-generated constructor stub[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mList<Recharge>rechargeList=null;[m
+[32m+[m		[32mRecharge r=null;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32mHttpSession session=request.getSession();[m
+[32m+[m		[32mrechargeList=(List<Recharge>)session.getAttribute("recharge");[m
+[32m+[m		[32mr=rechargeList.get(0);[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mint accBal=bdao.accountBalance(r.getAccNo());[m
+[32m+[m[41m		[m
+[32m+[m		[32mif(accBal>r.getAmmount() && r.getAmmount()>=0) {[m
+[32m+[m			[32mi=bdao.updateBalance(r.getAccNo(), accBal-r.getAmmount());[m
+[32m+[m			[32mif(i>0) {[m
+[32m+[m				[32msession.setAttribute("rechargeError", "Recharge Successful..!!");[m
+[32m+[m				[32mresponse.sendRedirect("Recharge.jsp");[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32msession.setAttribute("rechargeError", "Recharge failed..!!");[m
+[32m+[m				[32mresponse.sendRedirect("Recharge.jsp");[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32msession.setAttribute("rechargeError", "Insufficient Balance..!!");[m
+[32m+[m			[32mresponse.sendRedirect("Recharge.jsp");[m
+[32m+[m		[32m}[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/LogOutController.java b/src/main/java/project/controller/LogOutController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a05304b[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/LogOutController.java[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class LogOutController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/LogOutController")[m
+[32m+[m[32mpublic class LogOutController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public LogOutController() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m[41m		[m
+[32m+[m[32m     response.sendRedirect("HomeView.jsp");[m
+[32m+[m[41m       [m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/LoginController.java b/src/main/java/project/controller/LoginController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..918afd3[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/LoginController.java[m
+[36m@@ -0,0 +1,81 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Login;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class LoginController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/LoginController")[m
+[32m+[m[32mpublic class LoginController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#HttpServlet()[m
+[32m+[m	[32m */[m
+[32m+[m	[32mpublic LoginController() {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32m// TODO Auto-generated constructor stub[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mint accNo=Integer.parseInt(request.getParameter("accNo"));[m
+[32m+[m		[32mString pass=request.getParameter("pass");[m
+[32m+[m
+[32m+[m		[32mList<Customer>custList=null;[m
+[32m+[m		[32mCustomer c=null;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m
+[32m+[m
+[32m+[m		[32mcustList=bdao.login(accNo);[m
+[32m+[m		[32mc=custList.get(0);[m
+[32m+[m		[32mString str1="Invalid Account Number";[m
+[32m+[m		[32mString str2="Invalid Password";[m
+[32m+[m
+[32m+[m		[32mif(c.getAccNo()==accNo && c.getPass().equals(pass)) {[m
+[32m+[m			[32mHttpSession session=request.getSession();[m
+[32m+[m			[32msession.setAttribute("user", custList);[m
+[32m+[m			[32mresponse.sendRedirect("Dashboard.jsp");[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32mif(c.getAccNo()!=accNo) {[m
+[32m+[m				[32mHttpSession session=request.getSession();[m
+[32m+[m				[32msession.setAttribute("invalid", str1);[m
+[32m+[m				[32mresponse.sendRedirect("Login.jsp");[m
+[32m+[m
+[32m+[m			[32m}[m
+[32m+[m			[32melse if(!c.getPass().equals(pass)) {[m
+[32m+[m				[32mHttpSession session=request.getSession();[m
+[32m+[m				[32msession.setAttribute("invalid", str2);[m
+[32m+[m				[32mresponse.sendRedirect("Login.jsp");[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/NeftController.java b/src/main/java/project/controller/NeftController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e9e7e2d[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/NeftController.java[m
+[36m@@ -0,0 +1,90 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Neft;[m
+[32m+[m[32mimport project.model.Rtgs;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class NeftController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/NeftController")[m
+[32m+[m[32mpublic class NeftController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public NeftController() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mint recieverAccNo=Integer.parseInt(request.getParameter("toAcNo"));[m
+[32m+[m	[32m    String ifsc=request.getParameter("ifsc");[m
+[32m+[m	[32m    String branch=request.getParameter("branch");[m
+[32m+[m	[32m    float ammount=Float.parseFloat(request.getParameter("ammount"));[m
+[32m+[m
+[32m+[m	[32m    HttpSession session=request.getSession();[m
+[32m+[m	[32m    List<Customer> custList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m	[32m    if(custList != null && !custList.isEmpty()) {[m
+[32m+[m	[32m        Customer c=custList.get(0);[m
+[32m+[m	[32m        List<Neft>neftList=new ArrayList<Neft>();[m
+[32m+[m	[32m        BankDao bdao=new BankDaoImpl();[m
+[32m+[m	[32m        Neft n=new Neft(c.getAccNo(), recieverAccNo, ifsc, branch, "Neft", ammount);[m
+[32m+[m	[32m        neftList.add(n);[m
+[32m+[m	[32m        boolean b=bdao.validateReciever(recieverAccNo);[m
+[32m+[m	[32m        if(b==true) {[m
+[32m+[m	[32m            int senderAccBal=bdao.accountBalance(c.getAccNo());[m
+[32m+[m	[32m            int recieverBal=bdao.accountBalance(recieverAccNo);[m
+[32m+[m	[32m            if(senderAccBal > ammount) {[m
+[32m+[m	[32m                int j=bdao.updateBalance(c.getAccNo(), senderAccBal-(int)ammount);[m
+[32m+[m	[32m                int k=bdao.updateBalance(recieverAccNo, recieverBal+(int)ammount);[m
+[32m+[m	[32m                int i=bdao.neftTransaction(neftList);[m
+[32m+[m
+[32m+[m	[32m                if(i > 0 && j > 0 && k > 0) {[m
+[32m+[m	[32m                    session.setAttribute("neftError", "Transaction Successful...!!!");[m
+[32m+[m	[32m                    response.sendRedirect("Neft.jsp");[m
+[32m+[m	[32m                } else {[m
+[32m+[m	[32m                    session.setAttribute("neftError", "Transaction Failed...!!!");[m
+[32m+[m	[32m                    response.sendRedirect("Neft.jsp");[m
+[32m+[m	[32m                }[m
+[32m+[m	[32m            } else {[m
+[32m+[m	[32m                session.setAttribute("neftError", "Insufficient Funds...!!!");[m
+[32m+[m	[32m                response.sendRedirect("Neft.jsp");[m
+[32m+[m	[32m            }[m
+[32m+[m	[32m        } else {[m
+[32m+[m	[32m            session.setAttribute("neftError", "Invalid Account Number...!!!");[m
+[32m+[m	[32m            response.sendRedirect("Neft.jsp");[m
+[32m+[m	[32m        }[m
+[32m+[m	[32m    } else {[m
+[32m+[m	[32m        session.setAttribute("neftError", "User details not found...!!!");[m
+[32m+[m	[32m        response.sendRedirect("Neft.jsp");[m
+[32m+[m	[32m    }[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/RechargeController.java b/src/main/java/project/controller/RechargeController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cb4d097[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/RechargeController.java[m
+[36m@@ -0,0 +1,67 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Recharge;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class RechargeController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/RechargeController")[m
+[32m+[m[32mpublic class RechargeController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#HttpServlet()[m
+[32m+[m	[32m */[m
+[32m+[m	[32mpublic RechargeController() {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32m// TODO Auto-generated constructor stub[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mString mobNo=request.getParameter("mobNo");[m
+[32m+[m		[32mString service=request.getParameter("Service");[m
+[32m+[m		[32mint ammount=Integer.parseInt(request.getParameter("Ammount"));[m
+[32m+[m
+[32m+[m		[32mList<Recharge>rechargeList=new ArrayList<Recharge>();[m
+[32m+[m		[32mList<Customer>custList=null;[m
+[32m+[m		[32mCustomer c=null;[m
+[32m+[m		[32mHttpSession session=request.getSession();[m
+[32m+[m		[32mcustList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m		[32mc=custList.get(0);[m
+[32m+[m		[32mSystem.out.println(c.getAccNo());[m
+[32m+[m		[32mif(mobNo.length()!=10) {[m
+[32m+[m			[32msession.setAttribute("rechargeError", "Invalid Mobile Number");[m
+[32m+[m			[32mresponse.sendRedirect("Recharge.jsp");[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32mRecharge r=new Recharge(c.getAccNo(), mobNo, service, ammount);[m
+[32m+[m			[32mrechargeList.add(r);[m
+[32m+[m			[32msession.setAttribute("recharge", rechargeList);[m
+[32m+[m			[32mresponse.sendRedirect("ConfirmDetails.jsp");[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/RegisterController.java b/src/main/java/project/controller/RegisterController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f4b3692[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/RegisterController.java[m
+[36m@@ -0,0 +1,81 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class RegisterController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/RegisterController")[m
+[32m+[m[32mpublic class RegisterController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public RegisterController() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mString custName=null;[m
+[32m+[m		[32mint accNo=0;[m
+[32m+[m		[32mString pass=null;[m
+[32m+[m		[32mint accBal=0;[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mcustName = request.getParameter("custName");[m
+[32m+[m			[32maccNo = Integer.parseInt(request.getParameter("accNo"));[m
+[32m+[m			[32mpass = request.getParameter("password");[m
+[32m+[m			[32maccBal = Integer.parseInt(request.getParameter("accBal"));[m
+[32m+[m		[32m} catch (Exception e) {[m
+[32m+[m			[32mHttpSession session=request.getSession();[m
+[32m+[m			[32msession.setAttribute("register", "All Fields Require");[m
+[32m+[m			[32mresponse.sendRedirect("RegisterView.jsp");[m
+[32m+[m			[32mreturn;[m[41m [m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32mCustomer c=new Customer(custName, accNo, pass, accBal);[m
+[32m+[m		[32mList<Customer>custList=new ArrayList<>();[m
+[32m+[m		[32mcustList.add(c);[m
+[32m+[m		[32mi=bdao.register(custList);[m
+[32m+[m		[32mif(i>0) {[m
+[32m+[m			[32mHttpSession session=request.getSession();[m
+[32m+[m			[32msession.setAttribute("register", "Customer Registered");[m
+[32m+[m			[32mresponse.sendRedirect("RegisterView.jsp");[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32mHttpSession session=request.getSession();[m
+[32m+[m			[32msession.setAttribute("register", "Customer not Registered");[m
+[32m+[m			[32mresponse.sendRedirect("RegisterView.jsp");[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/RtgsController.java b/src/main/java/project/controller/RtgsController.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f455743[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/RtgsController.java[m
+[36m@@ -0,0 +1,91 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Neft;[m
+[32m+[m[32mimport project.model.Rtgs;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class RtgsController[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/RtgsController")[m
+[32m+[m[32mpublic class RtgsController extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#HttpServlet()[m
+[32m+[m	[32m */[m
+[32m+[m	[32mpublic RtgsController() {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32m// TODO Auto-generated constructor stub[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mint recieverAccNo=Integer.parseInt(request.getParameter("toAcNo"));[m
+[32m+[m	[32m    String ifsc=request.getParameter("ifsc");[m
+[32m+[m	[32m    String branch=request.getParameter("branch");[m
+[32m+[m	[32m    float ammount=Float.parseFloat(request.getParameter("ammount"));[m
+[32m+[m
+[32m+[m	[32m    HttpSession session=request.getSession();[m
+[32m+[m	[32m    List<Customer> custList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m	[32m    if(custList != null && !custList.isEmpty()) {[m
+[32m+[m	[32m        Customer c=custList.get(0);[m
+[32m+[m	[32m        List<Rtgs> rtgsList=new ArrayList<Rtgs>();[m
+[32m+[m	[32m        BankDao bdao=new BankDaoImpl();[m
+[32m+[m	[32m        Rtgs r=new Rtgs(c.getAccNo(), recieverAccNo, ifsc, branch, "Rtgs", ammount);[m
+[32m+[m	[32m        rtgsList.add(r);[m
+[32m+[m	[32m        boolean b=bdao.validateReciever(recieverAccNo);[m
+[32m+[m	[32m        if(b==true) {[m
+[32m+[m	[32m            int senderAccBal=bdao.accountBalance(c.getAccNo());[m
+[32m+[m	[32m            int recieverBal=bdao.accountBalance(recieverAccNo);[m
+[32m+[m	[32m            if(senderAccBal > ammount) {[m
+[32m+[m	[32m                int j=bdao.updateBalance(c.getAccNo(), senderAccBal-(int)ammount);[m
+[32m+[m	[32m                int k=bdao.updateBalance(recieverAccNo, recieverBal+(int)ammount);[m
+[32m+[m	[32m                int i=bdao.rtgsTransaction(rtgsList);[m
+[32m+[m
+[32m+[m	[32m                if(i > 0 && j > 0 && k > 0) {[m
+[32m+[m	[32m                    session.setAttribute("RtgsError", "Transaction Successful...!!!");[m
+[32m+[m	[32m                    response.sendRedirect("RtgsView.jsp");[m
+[32m+[m	[32m                } else {[m
+[32m+[m	[32m                    session.setAttribute("RtgsError", "Transaction Failed...!!!");[m
+[32m+[m	[32m                    response.sendRedirect("RtgsView.jsp");[m
+[32m+[m	[32m                }[m
+[32m+[m	[32m            } else {[m
+[32m+[m	[32m                session.setAttribute("RtgsError", "Insufficient Funds...!!!");[m
+[32m+[m	[32m                response.sendRedirect("RtgsView.jsp");[m
+[32m+[m	[32m            }[m
+[32m+[m	[32m        } else {[m
+[32m+[m	[32m            session.setAttribute("RtgsError", "Invalid Account Number...!!!");[m
+[32m+[m	[32m            response.sendRedirect("RtgsView.jsp");[m
+[32m+[m	[32m        }[m
+[32m+[m	[32m    } else {[m
+[32m+[m	[32m        session.setAttribute("RtgsError", "User details not found...!!!");[m
+[32m+[m	[32m        response.sendRedirect("RtgsView.jsp");[m
+[32m+[m	[32m    }[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/controller/StatementDisplay.java b/src/main/java/project/controller/StatementDisplay.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f1659a[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/controller/StatementDisplay.java[m
+[36m@@ -0,0 +1,63 @@[m
+[32m+[m[32mpackage project.controller;[m
+[32m+[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport javax.servlet.ServletException;[m
+[32m+[m[32mimport javax.servlet.annotation.WebServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServlet;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletRequest;[m
+[32m+[m[32mimport javax.servlet.http.HttpServletResponse;[m
+[32m+[m[32mimport javax.servlet.http.HttpSession;[m
+[32m+[m
+[32m+[m[32mimport project.dao.BankDao;[m
+[32m+[m[32mimport project.dao.BankDaoImpl;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Transaction;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Servlet implementation class StatementDisplay[m
+[32m+[m[32m */[m
+[32m+[m[32m@WebServlet("/StatementDisplay")[m
+[32m+[m[32mpublic class StatementDisplay extends HttpServlet {[m
+[32m+[m	[32mprivate static final long serialVersionUID = 1L;[m
+[32m+[m[41m       [m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @see HttpServlet#HttpServlet()[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public StatementDisplay() {[m
+[32m+[m[32m        super();[m
+[32m+[m[32m        // TODO Auto-generated constructor stub[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32mList<Customer>custList=null;[m
+[32m+[m		[32mList<Transaction>transList=new ArrayList<Transaction>();[m
+[32m+[m		[32mCustomer c=null;[m
+[32m+[m		[32mBankDao bdao=new BankDaoImpl();[m
+[32m+[m		[32mHttpSession session=request.getSession();[m
+[32m+[m		[32mcustList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m		[32mif (custList != null && !custList.isEmpty()) {[m
+[32m+[m		[32m    c = custList.get(0);[m
+[32m+[m		[32m  } else {[m
+[32m+[m			[32m  System.out.println("No data in List");[m
+[32m+[m		[32m  }[m
+[32m+[m		[32mtransList=bdao.bankStatement(c.getAccNo());[m
+[32m+[m		[32msession.setAttribute("bankstatement", transList);[m
+[32m+[m		[32mresponse.sendRedirect("BankStatement.jsp");[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m/**[m
+[32m+[m	[32m * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)[m
+[32m+[m	[32m */[m
+[32m+[m	[32mprotected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {[m
+[32m+[m		[32m// TODO Auto-generated method stub[m
+[32m+[m		[32mdoGet(request, response);[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/dao/BankDao.java b/src/main/java/project/dao/BankDao.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d4a012d[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/dao/BankDao.java[m
+[36m@@ -0,0 +1,28 @@[m
+[32m+[m[32mpackage project.dao;[m
+[32m+[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport project.model.Card;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Neft;[m
+[32m+[m[32mimport project.model.Rtgs;[m
+[32m+[m[32mimport project.model.Transaction;[m
+[32m+[m
+[32m+[m[32mpublic interface BankDao {[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic int neftTransaction(List<Neft>neftList);[m
+[32m+[m	[32mpublic int rtgsTransaction(List<Rtgs>rtgsList);[m
+[32m+[m	[32mpublic int cardTransaction(List<Card>cardList);[m
+[32m+[m	[32mpublic boolean validateSender(int accNo) ;[m
+[32m+[m	[32mpublic boolean validateReciever(int accNo);[m
+[32m+[m	[32mpublic int register(List<Customer>custList);[m
+[32m+[m	[32mpublic int accountBalance(int accNo);[m
+[32m+[m	[32mpublic List<Customer>login(int accNo);[m
+[32m+[m	[32mpublic int updateBalance(int accNo,int newBal);[m
+[32m+[m	[32mpublic List<Transaction>bankStatement(int accNo);[m
+[32m+[m	[32mpublic String getPassword(int accNo);[m
+[32m+[m	[32mpublic int changePassword(int accNo,String newPass);[m
+[32m+[m[41m	[m
+[32m+[m[41m		[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/dao/BankDaoImpl.java b/src/main/java/project/dao/BankDaoImpl.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e90816e[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/dao/BankDaoImpl.java[m
+[36m@@ -0,0 +1,286 @@[m
+[32m+[m[32mpackage project.dao;[m
+[32m+[m
+[32m+[m[32mimport java.sql.Connection;[m
+[32m+[m[32mimport java.sql.PreparedStatement;[m
+[32m+[m[32mimport java.sql.ResultSet;[m
+[32m+[m[32mimport java.sql.SQLException;[m
+[32m+[m[32mimport java.sql.Statement;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m[32mimport java.util.List;[m
+[32m+[m
+[32m+[m[32mimport project.model.Card;[m
+[32m+[m[32mimport project.model.Customer;[m
+[32m+[m[32mimport project.model.Neft;[m
+[32m+[m[32mimport project.model.Rtgs;[m
+[32m+[m[32mimport project.model.Transaction;[m
+[32m+[m
+[32m+[m[32mpublic class BankDaoImpl implements BankDao{[m
+[32m+[m	[32mPreparedStatement pstate=null;[m
+[32m+[m	[32mStatement state=null;[m
+[32m+[m	[32mResultSet result=null;[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int neftTransaction(List<Neft> neftList) {[m
+[32m+[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mNeft n=null;[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mn=neftList.get(0);[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("insert into transaction values(?,?,?,?)");[m
+[32m+[m			[32mpstate.setInt(1,n.getSenderAccNo());[m
+[32m+[m			[32mpstate.setInt(2, n.getRecieverAccNo());[m
+[32m+[m			[32mpstate.setString(3, n.getTransType());[m
+[32m+[m			[32mpstate.setFloat(4, n.getAmmount());[m
+[32m+[m			[32mi=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m		[32mreturn i;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int rtgsTransaction(List<Rtgs> rtgsList) {[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mRtgs r=null;[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mr=rtgsList.get(0);[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("insert into transaction values(?,?,?,?)");[m
+[32m+[m			[32mpstate.setInt(1,r.getSenderAccNo());[m
+[32m+[m			[32mpstate.setInt(2, r.getRecieverAccNo());[m
+[32m+[m			[32mpstate.setString(3, r.getTransType());[m
+[32m+[m			[32mpstate.setFloat(4, r.getAmmount());[m
+[32m+[m			[32mi=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m		[32mreturn i;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int cardTransaction(List<Card> cardList) {[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mCard c=null;[m
+[32m+[m		[32mc=cardList.get(0);[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("insert into transaction values(?,?,?,?)");[m
+[32m+[m			[32mpstate.setInt(1,c.getSenderAccNo());[m
+[32m+[m			[32mpstate.setInt(2, c.getRecieverAccNo());[m
+[32m+[m			[32mpstate.setString(3, c.getTransType());[m
+[32m+[m			[32mpstate.setFloat(4, c.getAmmount());[m
+[32m+[m			[32mi=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m		[32mreturn i;[m
+[32m+[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic boolean validateSender(int accNo) {[m
+[32m+[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mList<Customer>custList=new ArrayList<>();[m
+[32m+[m		[32mtry {[m
+[32m+[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from customer where acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mSystem.out.println("test1");[m
+[32m+[m			[32mSystem.out.println(accNo);[m
+[32m+[m			[32mif(result.next()) {[m
+[32m+[m				[32mcustList.add(new Customer(result.getString(1),result.getInt(2),result.getString(3),result.getInt(4)));[m
+[32m+[m			[32m}[m
+[32m+[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m		[32mif(!custList.isEmpty()) {[m
+[32m+[m			[32mreturn true;[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32mreturn false;[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic boolean validateReciever(int accNo) {[m
+[32m+[m		[32mList<Customer>custList=new ArrayList<>();[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mtry {[m
+[32m+[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from customer where acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mSystem.out.println("Test2");[m
+[32m+[m			[32mSystem.out.println(accNo);[m
+[32m+[m			[32mif(result.next()) {[m
+[32m+[m				[32mcustList.add(new Customer(result.getString(1),result.getInt(2),result.getString(3),result.getInt(4)));[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32mreturn false;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mif(!custList.isEmpty()) {[m
+[32m+[m			[32mreturn true;[m
+[32m+[m		[32m}else {[m
+[32m+[m			[32mreturn false;[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int register(List<Customer> custList) {[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mCustomer c=new Customer();[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mc=custList.get(0);[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("insert into customer values(?,?,?,?)");[m
+[32m+[m			[32mpstate.setString(1, c.getCustName());[m
+[32m+[m			[32mpstate.setInt(2, c.getAccNo());[m
+[32m+[m			[32mpstate.setString(3, c.getPass());[m
+[32m+[m			[32mpstate.setInt(4, c.getAccBal());[m
+[32m+[m			[32mi=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn i;[m
+[32m+[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int accountBalance(int accNo) {[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mint accBal=0;[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from customer where acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mif(result.next()) {[m
+[32m+[m				[32maccBal=result.getInt(4);[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32maccBal=0;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn accBal;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic List<Customer> login(int accNo) {[m
+[32m+[m		[32mList<Customer>custList=new ArrayList<Customer>();[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from customer where acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mSystem.out.println(accNo);[m
+[32m+[m			[32mif(result.next()) {[m
+[32m+[m				[32mSystem.out.println("hello");[m
+[32m+[m				[32mcustList.add(new Customer(result.getString(1),result.getInt(2),result.getString(3),result.getInt(4)));[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32mcustList.add(new Customer("00",00,"00",00));[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m[41m			[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn custList;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int updateBalance(int accNo,int newBal) {[m
+[32m+[m		[32mint j=0;[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("update Customer set acc_bal=? where acc_No=?");[m
+[32m+[m			[32mpstate.setInt(1, newBal);[m
+[32m+[m			[32mpstate.setInt(2, accNo);[m
+[32m+[m			[32mj=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn j;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic List<Transaction> bankStatement(int accNo) {[m
+[32m+[m		[32mList<Transaction>transList=new ArrayList<>();[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from transaction where from_acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mwhile(result.next()) {[m
+[32m+[m				[32mtransList.add(new Transaction(result.getInt(1), result.getInt(2), result.getString(3), result.getInt(4)));[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn transList;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic String getPassword(int accNo) {[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mint i=0;[m
+[32m+[m		[32mString Password="";[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("select * from customer where acc_no=?");[m
+[32m+[m			[32mpstate.setInt(1, accNo);[m
+[32m+[m			[32mresult=pstate.executeQuery();[m
+[32m+[m			[32mif(result.next()) {[m
+[32m+[m				[32m Password=result.getString(3);[m
+[32m+[m			[32m}else {[m
+[32m+[m				[32mPassword=null;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn Password;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32m@Override[m
+[32m+[m	[32mpublic int changePassword(int accNo, String newPass) {[m
+[32m+[m		[32mint j=0;[m
+[32m+[m		[32mConnection con=DBConnection.myconnection();[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mpstate=con.prepareStatement("update Customer set PASSWORD=? where acc_No=?");[m
+[32m+[m			[32mpstate.setString(1, newPass);[m
+[32m+[m			[32mpstate.setInt(2, accNo);[m
+[32m+[m			[32mj=pstate.executeUpdate();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m		[32mreturn j;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/dao/DBConnection.java b/src/main/java/project/dao/DBConnection.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3b92a50[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/dao/DBConnection.java[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32mpackage project.dao;[m
+[32m+[m
+[32m+[m[32mimport java.net.ConnectException;[m
+[32m+[m[32mimport java.sql.Connection;[m
+[32m+[m[32mimport java.sql.DriverManager;[m
+[32m+[m[32mimport java.sql.SQLException;[m
+[32m+[m
+[32m+[m[32mpublic class DBConnection {[m
+[32m+[m	[32mpublic static Connection myconnection() {[m
+[32m+[m		[32mConnection con=null;[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mClass.forName("oracle.jdbc.OracleDriver");[m
+[32m+[m			[32mcon=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","System","123456789");[m
+[32m+[m			[32mSystem.out.println("Connected to database"+con);[m
+[32m+[m		[32m} catch (ClassNotFoundException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m} catch (SQLException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m		[32mreturn con;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Card.java b/src/main/java/project/model/Card.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..abc58f2[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Card.java[m
+[36m@@ -0,0 +1,53 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Card {[m
+[32m+[m	[32mprivate int senderAccNo;[m
+[32m+[m	[32mprivate int recieverAccNo;[m
+[32m+[m	[32mprivate int cvv;[m
+[32m+[m	[32mprivate String transType;[m
+[32m+[m	[32mprivate int ammount;[m
+[32m+[m	[32mpublic Card() {[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Card(int senderAccNo, int recieverAccNo, int cvv, String transType, int ammount) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m		[32mthis.cvv = cvv;[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getSenderAccNo() {[m
+[32m+[m		[32mreturn senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setSenderAccNo(int senderAccNo) {[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getRecieverAccNo() {[m
+[32m+[m		[32mreturn recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setRecieverAccNo(int recieverAccNo) {[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getCvv() {[m
+[32m+[m		[32mreturn cvv;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setCvv(int cvv) {[m
+[32m+[m		[32mthis.cvv = cvv;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getTransType() {[m
+[32m+[m		[32mreturn transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setTransType(String transType) {[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAmmount() {[m
+[32m+[m		[32mreturn ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAmmount(int ammount) {[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Customer.java b/src/main/java/project/model/Customer.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d4923b1[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Customer.java[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Customer {[m
+[32m+[m	[32mprivate String custName;[m
+[32m+[m	[32mprivate int accNo;[m
+[32m+[m	[32mprivate String pass;[m
+[32m+[m	[32mprivate int accBal;[m
+[32m+[m	[32mpublic Customer() {[m
+[32m+[m		[32msuper();[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Customer(String custName, int accNo, String pass, int accBal) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.custName = custName;[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m		[32mthis.pass = pass;[m
+[32m+[m		[32mthis.accBal = accBal;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getCustName() {[m
+[32m+[m		[32mreturn custName;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setCustName(String custName) {[m
+[32m+[m		[32mthis.custName = custName;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAccNo() {[m
+[32m+[m		[32mreturn accNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAccNo(int accNo) {[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getPass() {[m
+[32m+[m		[32mreturn pass;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setPass(String pass) {[m
+[32m+[m		[32mthis.pass = pass;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAccBal() {[m
+[32m+[m		[32mreturn accBal;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAccBal(int accBal) {[m
+[32m+[m		[32mthis.accBal = accBal;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Login.java b/src/main/java/project/model/Login.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..01d1a50[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Login.java[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Login {[m
+[32m+[m	[32mprivate int accNo;[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate String pass;[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic Login() {[m
+[32m+[m[41m	[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic Login(int accNo,  String pass) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m[41m	[m
+[32m+[m		[32mthis.pass = pass;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic int getAccNo() {[m
+[32m+[m		[32mreturn accNo;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setAccNo(int accNo) {[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m
+[32m+[m	[32mpublic String getPass() {[m
+[32m+[m		[32mreturn pass;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setPass(String pass) {[m
+[32m+[m		[32mthis.pass = pass;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Neft.java b/src/main/java/project/model/Neft.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6af7e9c[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Neft.java[m
+[36m@@ -0,0 +1,64 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Neft {[m
+[32m+[m	[32mprivate int senderAccNo;[m
+[32m+[m	[32mprivate int recieverAccNo;[m
+[32m+[m	[32mprivate String ifsc;[m
+[32m+[m	[32mprivate String branch;[m
+[32m+[m	[32mprivate String transType;[m
+[32m+[m	[32mprivate float ammount;[m
+[32m+[m	[32mpublic Neft() {[m
+[32m+[m		[32msuper();[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Neft(int senderAccNo, int recieverAccNo, String ifsc, String branch, String transType, float ammount) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m		[32mthis.ifsc = ifsc;[m
+[32m+[m		[32mthis.branch = branch;[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getSenderAccNo() {[m
+[32m+[m		[32mreturn senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setSenderAccNo(int senderAccNo) {[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getRecieverAccNo() {[m
+[32m+[m		[32mreturn recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setRecieverAccNo(int recieverAccNo) {[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getIfsc() {[m
+[32m+[m		[32mreturn ifsc;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setIfsc(String ifsc) {[m
+[32m+[m		[32mthis.ifsc = ifsc;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getBranch() {[m
+[32m+[m		[32mreturn branch;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setBranch(String branch) {[m
+[32m+[m		[32mthis.branch = branch;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getTransType() {[m
+[32m+[m		[32mreturn transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setTransType(String transType) {[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic float getAmmount() {[m
+[32m+[m		[32mreturn ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAmmount(float ammount) {[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Recharge.java b/src/main/java/project/model/Recharge.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5eed63b[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Recharge.java[m
+[36m@@ -0,0 +1,45 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Recharge {[m
+[32m+[m	[32mprivate int accNo;[m
+[32m+[m	[32mprivate String mobNo;[m
+[32m+[m	[32mprivate String service;[m
+[32m+[m	[32mprivate int ammount;[m
+[32m+[m	[32mpublic Recharge() {[m
+[32m+[m		[32msuper();[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Recharge(int accNo, String mobNo, String service, int ammount) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m		[32mthis.mobNo = mobNo;[m
+[32m+[m		[32mthis.service = service;[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAccNo() {[m
+[32m+[m		[32mreturn accNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAccNo(int accNo) {[m
+[32m+[m		[32mthis.accNo = accNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getMobNo() {[m
+[32m+[m		[32mreturn mobNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setMobNo(String mobNo) {[m
+[32m+[m		[32mthis.mobNo = mobNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getService() {[m
+[32m+[m		[32mreturn service;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setService(String service) {[m
+[32m+[m		[32mthis.service = service;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAmmount() {[m
+[32m+[m		[32mreturn ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAmmount(int ammount) {[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Rtgs.java b/src/main/java/project/model/Rtgs.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8a142bc[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Rtgs.java[m
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Rtgs {[m
+[32m+[m	[32mprivate int senderAccNo;[m
+[32m+[m	[32mprivate int recieverAccNo;[m
+[32m+[m	[32mprivate String ifsc;[m
+[32m+[m	[32mprivate String branch;[m
+[32m+[m	[32mprivate String transType;[m
+[32m+[m	[32mprivate float ammount;[m
+[32m+[m	[32mpublic Rtgs() {[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Rtgs(int senderAccNo, int recieverAccNo, String ifsc, String branch, String transType, float ammount) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m		[32mthis.ifsc = ifsc;[m
+[32m+[m		[32mthis.branch = branch;[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getSenderAccNo() {[m
+[32m+[m		[32mreturn senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setSenderAccNo(int senderAccNo) {[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getRecieverAccNo() {[m
+[32m+[m		[32mreturn recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setRecieverAccNo(int recieverAccNo) {[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getIfsc() {[m
+[32m+[m		[32mreturn ifsc;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setIfsc(String ifsc) {[m
+[32m+[m		[32mthis.ifsc = ifsc;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getBranch() {[m
+[32m+[m		[32mreturn branch;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setBranch(String branch) {[m
+[32m+[m		[32mthis.branch = branch;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getTransType() {[m
+[32m+[m		[32mreturn transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setTransType(String transType) {[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic float getAmmount() {[m
+[32m+[m		[32mreturn ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAmmount(float ammount) {[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/project/model/Transaction.java b/src/main/java/project/model/Transaction.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..584209e[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/project/model/Transaction.java[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32mpackage project.model;[m
+[32m+[m
+[32m+[m[32mpublic class Transaction {[m
+[32m+[m	[32mprivate int senderAccNo;[m
+[32m+[m	[32mprivate int recieverAccNo;[m
+[32m+[m	[32mprivate String transType;[m
+[32m+[m	[32mprivate int ammount;[m
+[32m+[m	[32mpublic Transaction() {[m
+[32m+[m		[32msuper();[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic Transaction(int senderAccNo, int recieverAccNo, String transType, int ammount) {[m
+[32m+[m		[32msuper();[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getSenderAccNo() {[m
+[32m+[m		[32mreturn senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setSenderAccNo(int senderAccNo) {[m
+[32m+[m		[32mthis.senderAccNo = senderAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getRecieverAccNo() {[m
+[32m+[m		[32mreturn recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setRecieverAccNo(int recieverAccNo) {[m
+[32m+[m		[32mthis.recieverAccNo = recieverAccNo;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic String getTransType() {[m
+[32m+[m		[32mreturn transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setTransType(String transType) {[m
+[32m+[m		[32mthis.transType = transType;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic int getAmmount() {[m
+[32m+[m		[32mreturn ammount;[m
+[32m+[m	[32m}[m
+[32m+[m	[32mpublic void setAmmount(int ammount) {[m
+[32m+[m		[32mthis.ammount = ammount;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/webapp/About.jsp b/src/main/webapp/About.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..283dc88[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/About.jsp[m
+[36m@@ -0,0 +1,84 @@[m
+[32m+[m[32m<%@ page language="java" contentType="text/html; charset=UTF-8"[m
+[32m+[m[32m    pageEncoding="UTF-8"%>[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <title>About Our Bank Management Application</title>[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m        body {[m
+[32m+[m[32m            font-family: Arial, sans-serif;[m
+[32m+[m[32m            margin: 0;[m
+[32m+[m[32m            padding: 0;[m
+[32m+[m[32m            background-color: #0093e9;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        .container {[m
+[32m+[m[32m            max-width: 800px;[m
+[32m+[m[32m            margin: 50px auto;[m
+[32m+[m[32m            padding: 20px;[m
+[32m+[m[32m            background-color: #fff;[m
+[32m+[m[32m            border-radius: 5px;[m
+[32m+[m[32m            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);[m
+[32m+[m[32m        }[m
+[32m+[m[32m        h1 {[m
+[32m+[m[32m            color: #333;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            margin-bottom: 20px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        p {[m
+[32m+[m[32m            line-height: 1.6;[m
+[32m+[m[32m            margin-bottom: 20px;[m
+[32m+[m[32m            color: #666;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        .features {[m
+[32m+[m[32m            margin-top: 30px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        .feature {[m
+[32m+[m[32m            margin-bottom: 20px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        .feature h3 {[m
+[32m+[m[32m            color: #333;[m
+[32m+[m[32m            margin-bottom: 10px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    </style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m              <div class="container-fluid">[m
+[32m+[m[32m                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">[m
+[32m+[m[32m                  <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dasboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Help</a>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m        <h1>About Our Bank Management Application</h1>[m
+[32m+[m[32m        <p>Welcome to our online bank management application! Our platform provides a convenient way for you to manage your banking needs from the comfort of your home or on the go.</p>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <div class="features">[m
+[32m+[m[32m            <h2>Features</h2>[m
+[32m+[m[32m            <div class="feature">[m
+[32m+[m[32m                <h3>Recharge</h3>[m
+[32m+[m[32m                <p>Easily recharge your mobile phone or other prepaid services.</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="feature">[m
+[32m+[m[32m                <h3>Fund Transfer</h3>[m
+[32m+[m[32m                <p>Transfer funds between your accounts or to other accounts within our bank.</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="feature">[m
+[32m+[m[32m                <h3>Bank Statements</h3>[m
+[32m+[m[32m                <p>View and download your bank account statements for easy record-keeping.</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m        <div class="mission">[m
+[32m+[m[32m            <h2>Our Mission</h2>[m
+[32m+[m[32m            <p>Our mission is to provide a secure and user-friendly platform for all your banking needs. We strive to offer efficient services that enhance your banking experience.</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/src/main/webapp/BankStatement.jsp b/src/main/webapp/BankStatement.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d22ebc0[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/BankStatement.jsp[m
+[36m@@ -0,0 +1,155 @@[m
+[32m+[m[32m<%@page import="java.util.ArrayList"%>[m
+[32m+[m[32m<%@page import="project.model.Transaction"%>[m
+[32m+[m[32m<%@page import="java.util.List"%>[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Bank Statement</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    body {[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m        color: #333;[m
+[32m+[m[32m        font-family: Arial, sans-serif;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .navbar {[m
+[32m+[m[32m        background-color: grey;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .navbar-nav .nav-link {[m
+[32m+[m[32m        color: black;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card-container {[m
+[32m+[m[32m        display: flex;[m
+[32m+[m[32m        flex-wrap: wrap;[m
+[32m+[m[32m        justify-content: center;[m
+[32m+[m[32m        margin-top: 50px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card {[m
+[32m+[m[32m        width: 200px;[m
+[32m+[m[32m        margin: 20px;[m
+[32m+[m[32m        border-radius: 5px;[m
+[32m+[m[32m        border: 2px solid grey;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card:hover {[m
+[32m+[m[32m        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card img {[m
+[32m+[m[32m        width: 100%;[m
+[32m+[m[32m        border-radius: 5px 5px 0 0;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card form input[type="submit"] {[m
+[32m+[m[32m        width: 100%;[m
+[32m+[m[32m        padding: 10px;[m
+[32m+[m[32m        border: none;[m
+[32m+[m[32m        margin: 2px;[m
+[32m+[m[32m        border-radius: 4px;[m
+[32m+[m[32m        cursor: pointer;[m
+[32m+[m[32m        background-color: #333A73;[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        font-size: 16px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .card form input[type="submit"]:hover {[m
+[32m+[m[32m        background-color: #45a049;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .content {[m
+[32m+[m[32m        background-color: white;[m
+[32m+[m[32m        padding: 20px;[m
+[32m+[m[32m        border-radius: 10px;[m
+[32m+[m[32m        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m        margin: 20px auto;[m
+[32m+[m[32m        max-width: 800px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    table {[m
+[32m+[m[32m        width: 100%;[m
+[32m+[m[32m        border-collapse: collapse;[m
+[32m+[m[32m        margin: 20px 0;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    table, th, td {[m
+[32m+[m[32m        border: 1px solid black;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    th, td {[m
+[32m+[m[32m        padding: 10px;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m<script type="text/javascript">[m
+[32m+[m[32m    function clear() {[m
+[32m+[m[32m        window.onload = clearFields;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</script>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <!-- Navbar -->[m
+[32m+[m[32m    <nav class="navbar navbar-expand-lg">[m
+[32m+[m[32m        <div class="container-fluid">[m
+[32m+[m[32m            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s" style="width: 4%; height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: auto;">[m
+[32m+[m[32m                <div class="navbar-nav">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Contactus.jsp"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dashboard.jsp"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </nav>[m
+[32m+[m
+[32m+[m[32m    <!-- Card container -->[m
+[32m+[m[32m    <div class="card-container">[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwSm4jyk1gWzOlIV-2rNyVOa07r8pOU2PClBLPkKSedzgC37tU" alt="Image">[m
+[32m+[m[32m            <form action="BankStatementController">[m
+[32m+[m[32m                <input type="submit" value="Download">[m
+[32m+[m[32m            </form>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Bo5xRTb0f0THe7mP1cAWF8BKFQwBLjSFF9ebffQ9SxeOTjJu" alt="Image">[m
+[32m+[m[32m            <form action="StatementDisplay">[m
+[32m+[m[32m                <input type="submit" value="View">[m
+[32m+[m[32m            </form>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m[32m    <div class="content">[m
+[32m+[m[32m        <h2 style="text-align:center;">Bank Statement</h2>[m
+[32m+[m[32m        <%[m
+[32m+[m[32m        List<Transaction> transList = new ArrayList<>();[m
+[32m+[m[32m        if (!session.isNew()) {[m
+[32m+[m[32m            transList = (List<Transaction>) session.getAttribute("bankstatement");[m
+[32m+[m[32m        %>[m
+[32m+[m[32m        <table>[m
+[32m+[m[32m            <thead>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <th>Sender</th>[m
+[32m+[m[32m                    <th>Receiver</th>[m
+[32m+[m[32m                    <th>Transaction Type</th>[m
+[32m+[m[32m                    <th>Amount</th>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m            </thead>[m
+[32m+[m[32m            <tbody>[m
+[32m+[m[32m                <%[m
+[32m+[m[32m                if (transList != null) {[m
+[32m+[m[32m                    for (Transaction t : transList) {[m
+[32m+[m[32m                %>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td><%= t.getSenderAccNo() %></td>[m
+[32m+[m[32m                    <td><%= t.getRecieverAccNo() %></td>[m
+[32m+[m[32m                    <td><%= t.getTransType() %></td>[m
+[32m+[m[32m                    <td><%= t.getAmmount() %></td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <%[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m[32m                %>[m
+[32m+[m[32m            </tbody>[m
+[32m+[m[32m        </table>[m
+[32m+[m[32m        <%[m
+[32m+[m[32m        }[m
+[32m+[m[32m        %>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/CardPayment.jsp b/src/main/webapp/CardPayment.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0ac428f[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/CardPayment.jsp[m
+[36m@@ -0,0 +1,103 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="UTF-8">[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m  <title>cardPay</title>[m
+[32m+[m[32m  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m  <style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 50px 550px 0px 550px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn-grad {[m
+[32m+[m[32m            background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);[m
+[32m+[m[32m            margin: 60px;[m
+[32m+[m[32m            padding: 15px 45px;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            text-transform: uppercase;[m
+[32m+[m[32m            transition: 0.5s;[m
+[32m+[m[32m            background-size: 200% auto;[m
+[32m+[m[32m            color: white;[m[41m            [m
+[32m+[m[32m            box-shadow: 0 0 20px #eee;[m
+[32m+[m[32m            border-radius: 10px;[m
+[32m+[m[32m            display: block;[m
+[32m+[m[32m          }[m
+[32m+[m
+[32m+[m[32m          .btn-grad:hover {[m
+[32m+[m[32m            background-position: right center; /* change the direction of the change here */[m
+[32m+[m[32m            color: #fff;[m
+[32m+[m[32m            text-decoration: none;[m
+[32m+[m[32m          }[m
+[32m+[m[32m  </style>[m
+[32m+[m[32m  <script type="text/javascript">[m
+[32m+[m[32m  function clear(){[m
+[32m+[m		[32mwindow.onload=clearFields;[m
+[32m+[m	[32m}[m
+[32m+[m[32m  </script>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m      <body>[m
+[32m+[m[32m        <div style="background-color: grey;">[m
+[32m+[m[32m          <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m              <div class="container-fluid">[m
+[32m+[m[32m                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 900px;">[m
+[32m+[m[32m                  <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m         </div>[m
+[32m+[m[32m         <div class="parent">[m
+[32m+[m[32m          <form action="CardPaymentController">[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="number"><i class="fa-solid fa-file-invoice"></i> Account no:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="accNo" required placeholder="Account no"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="formgroup">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-sack-dollar"></i> CW:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="cvv" required placeholder="CW"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                  <label class="control-label col-sm-7"><i class="fa-solid fa-sack-dollar"></i> Amount:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="ammount" required placeholder="Amount"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m[41m [m
+[32m+[m[32m              <button class="btn-grad" type="submit">TRANSFER</button>[m
+[32m+[m[32m          </form>[m
+[32m+[m[32m                  <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("CardError");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[41m      [m
+[32m+[m[32m      </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/ChangePasswordView.jsp b/src/main/webapp/ChangePasswordView.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..be84ab5[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/ChangePasswordView.jsp[m
+[36m@@ -0,0 +1,93 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Change Password</title>[m
+[32m+[m[32m<!-- Include Bootstrap for easy styling -->[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m  /* Gradient background */[m
+[32m+[m[32m  body {[m
+[32m+[m[32m    background-color: #0093E9;[m
+[32m+[m[32m    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Card layout for the form */[m
+[32m+[m[32m  .form-card {[m
+[32m+[m[32m    max-width: 500px;[m
+[32m+[m[32m    margin: 50px auto;[m
+[32m+[m[32m    padding: 20px;[m
+[32m+[m[32m    background-color: white;[m
+[32m+[m[32m    border-radius: 10px;[m
+[32m+[m[32m    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Form styling */[m
+[32m+[m[32m  .form-group {[m
+[32m+[m[32m    margin-bottom: 15px;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .form-label {[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Button styling */[m
+[32m+[m[32m  .btn {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    padding: 10px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    background-color: #0093E9;[m
+[32m+[m[32m    color: white;[m
+[32m+[m[32m    border: none;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m    transition: all 0.3s ease;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .btn:hover {[m
+[32m+[m[32m    background-color: #80D0C7;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m              <div class="container-fluid">[m
+[32m+[m[32m                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="padding-left: 930px;">[m
+[32m+[m[32m                  <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m<div class="form-card">[m
+[32m+[m[32m  <h2 style="text-align:center;">Change Password</h2>[m
+[32m+[m[32m  <form action="ChangePassword" method="post">[m
+[32m+[m[32m    <div class="form-group">[m
+[32m+[m[32m      <label class="form-label" for="oldPass">Old Password:</label>[m
+[32m+[m[32m      <input type="password" id="oldPass" name="oldPass" class="form-control" placeholder="Enter old password">[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="form-group">[m
+[32m+[m[32m      <label class="form-label" for="newPass">New Password:</label>[m
+[32m+[m[32m      <input type="password" id="newPass" name="newPass" class="form-control" placeholder="Enter new password">[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <button type="submit" class="btn">Change Pass</button>[m
+[32m+[m[32m  </form>[m
+[32m+[m[41m     [m
+[32m+[m[41m    [m
+[32m+[m[32m</div>[m
+[32m+[m[32m<!-- Include optional Bootstrap scripts -->[m
+[32m+[m[32m<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>[m
+[32m+[m[32m<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/ConfirmDetails.jsp b/src/main/webapp/ConfirmDetails.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..14fd27b[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/ConfirmDetails.jsp[m
+[36m@@ -0,0 +1,119 @@[m
+[32m+[m[32m<%@page import="java.util.List"%>[m
+[32m+[m[32m<%@page import="project.model.Recharge"%>[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Recharge Details</title>[m
+[32m+[m[32m<!-- Include Bootstrap for easy styling -->[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m  /* Gradient background */[m
+[32m+[m[32m  body {[m
+[32m+[m[32m    background-color: #0093E9;[m
+[32m+[m[32m    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Table styling */[m
+[32m+[m[32m  .table {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    border-collapse: collapse;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .table th, .table td {[m
+[32m+[m[32m    padding: 10px;[m
+[32m+[m[32m    border: 1px solid #ddd;[m
+[32m+[m[32m    text-align: left;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .table th {[m
+[32m+[m[32m    background-color: #f2f2f2;[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Card layout */[m
+[32m+[m[32m  .card {[m
+[32m+[m[32m    max-width: 600px;[m
+[32m+[m[32m    margin: 50px auto;[m
+[32m+[m[32m    padding: 20px;[m
+[32m+[m[32m    background-color: white;[m
+[32m+[m[32m    border-radius: 10px;[m
+[32m+[m[32m    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Button styling */[m
+[32m+[m[32m  .btn {[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    padding: 10px 20px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    color: white;[m
+[32m+[m[32m    background-color: #0093E9;[m
+[32m+[m[32m    border: none;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    transition: all 0.3s ease;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .btn:hover {[m
+[32m+[m[32m    background-color: #80D0C7;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 955px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m<div class="card">[m
+[32m+[m[32m  <h2 style="text-align:center;">Recharge Details</h2>[m
+[32m+[m[32m  <form action="ConfirmDetailsController">[m
+[32m+[m[32m    <button type="submit" class="btn">Confirm</button>[m
+[32m+[m[32m  </form>[m
+[32m+[m
+[32m+[m[32m  <table class="table">[m
+[32m+[m[32m    <thead>[m
+[32m+[m[32m      <tr>[m
+[32m+[m[32m        <th>Mobile Number</th>[m
+[32m+[m[32m        <th>Service</th>[m
+[32m+[m[32m        <th>Amount</th>[m
+[32m+[m[32m      </tr>[m
+[32m+[m[32m    </thead>[m
+[32m+[m[32m    <tbody>[m
+[32m+[m[32m      <%[m
+[32m+[m[32m        List<Recharge> rechargeList = (List<Recharge>) session.getAttribute("recharge");[m
+[32m+[m[32m        if (rechargeList != null && !rechargeList.isEmpty()) {[m
+[32m+[m[32m          Recharge r = rechargeList.get(0);[m
+[32m+[m[32m      %>[m
+[32m+[m[32m      <tr>[m
+[32m+[m[32m        <td><%= r.getMobNo() %></td>[m
+[32m+[m[32m        <td><%= r.getService() %></td>[m
+[32m+[m[32m        <td><%= r.getAmmount() %></td>[m
+[32m+[m[32m      </tr>[m
+[32m+[m[32m      <%[m[41m [m
+[32m+[m[32m        }[m
+[32m+[m[32m      %>[m
+[32m+[m[32m    </tbody>[m
+[32m+[m[32m  </table>[m
+[32m+[m[32m</div>[m
+[32m+[m[32m<!-- Include optional Bootstrap scripts -->[m
+[32m+[m[32m<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>[m
+[32m+[m[32m<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/Contactus.jsp b/src/main/webapp/Contactus.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..85e9550[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Contactus.jsp[m
+[36m@@ -0,0 +1,115 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <title>Contact Us - Bank Management System</title>[m
+[32m+[m[32m    <style>[m
+[32m+[m	[32m/* style.css */[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    font-family: Arial, sans-serif;[m
+[32m+[m[32m    background: linear-gradient(to bottom, #1a237e, #3949ab);/* Light blue gradient */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container {[m
+[32m+[m[32m    max-width: 600px;[m
+[32m+[m[32m    margin: 50px auto;[m
+[32m+[m[32m    padding: 20px;[m
+[32m+[m[32m    background: white;[m
+[32m+[m[32m    border: 1px solid #ddd;[m
+[32m+[m[32m    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);[m
+[32m+[m[32m    border-radius: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mh2 {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    color: #333;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.form-group {[m
+[32m+[m[32m    margin-bottom: 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mlabel {[m
+[32m+[m[32m    display: block;[m
+[32m+[m[32m    margin-bottom: 5px;[m
+[32m+[m[32m    color: #555;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput, textarea {[m
+[32m+[m[32m    width: 90%;[m
+[32m+[m[32m    padding: 10px;[m
+[32m+[m[32m    border: 1px solid #ccc;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput:focus, textarea:focus {[m
+[32m+[m[32m    border-color: #66afe9; /* Light blue focus color */[m
+[32m+[m[32m    outline: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput[type="submit"] {[m
+[32m+[m[32m    background: #3399ff; /* Bright blue */[m
+[32m+[m[32m    color: white;[m
+[32m+[m[32m    border: none;[m
+[32m+[m[32m    padding: 10px 20px;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput[type="submit"]:hover {[m
+[32m+[m[32m    background: #2874c5; /* Darker blue on hover */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput[type="submit"]:focus {[m
+[32m+[m[32m    outline: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m	[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m        <h2>Contact Us</h2>[m
+[32m+[m[32m        <form action="/submit_contact_form" method="POST">[m
+[32m+[m[32m            <!-- User Details -->[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="name">Name:</label>[m
+[32m+[m[32m                <input type="text" id="name" name="name" required>[m
+[32m+[m[32m            </div>[m
+[32m+[m[41m            [m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="email">Email:</label>[m
+[32m+[m[32m                <input type="email" id="email" name="email" required>[m
+[32m+[m[32m            </div>[m
+[32m+[m[41m            [m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="phone">Phone:</label>[m
+[32m+[m[32m                <input type="tel" id="phone" name="phone">[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <!-- Inquiry Details -->[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="subject">Subject:</label>[m
+[32m+[m[32m                <input type="text" id="subject" name="subject" required>[m
+[32m+[m[32m            </div>[m
+[32m+[m[41m            [m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="message">Message:</label>[m
+[32m+[m[32m                <textarea id="message" name="message" rows="4" required></textarea>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <!-- Anti-Spam (CAPTCHA or Simple Challenge) -->[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label for="captcha">Please solve: 3 + 4 = ?</label>[m
+[32m+[m[32m                <input type="number" id="captcha" name="captcha" required>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <!-- Submit Button -->[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <input type="submit" value="Submit">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/Dashboard.jsp b/src/main/webapp/Dashboard.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6d7e66b[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Dashboard.jsp[m
+[36m@@ -0,0 +1,130 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Navigation Cards</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    /* Flexbox container to center the cards */[m
+[32m+[m[32m    body {[m
+[32m+[m[32m        background-color: #0093E9;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    /* Card container */[m
+[32m+[m[32m    .card-container {[m
+[32m+[m[32m        display: flex;[m
+[32m+[m[32m        flex-wrap: wrap;[m
+[32m+[m[32m        justify-content: center;[m
+[32m+[m[32m        align-items: center; /* Center vertically */[m
+[32m+[m[32m        gap: 20px;[m
+[32m+[m[32m        padding: 150px;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /* Individual card */[m
+[32m+[m[32m   .card {[m
+[32m+[m[32m    width: 200px; /* Adjust the width as needed */[m
+[32m+[m[32m    height: 250px; /* Adjust the height as needed */[m
+[32m+[m[32m    padding: 20px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    background-color: #ffffff;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m    color: #333;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    justify-content: space-between;[m
+[32m+[m[32m    border: 1px solid #ddd; /* Add border style */[m
+[32m+[m[32m    margin: 10px; /* Add margin to separate the boxes */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m.card a {[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m    color: #333;[m
+[32m+[m[32m    margin-top: 10px; /* Adjust the margin as needed */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card img {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    border-radius: 5px 5px 0 0;[m
+[32m+[m[32m}[m
+[32m+[m[41m  [m
+[32m+[m[32m  /* Button styles */[m
+[32m+[m[32m.card button {[m
+[32m+[m[32m    /* Green */[m
+[32m+[m[32m    background-color:#0093E9;[m
+[32m+[m[32m    color: black !important;[m
+[32m+[m[32m    padding: 10px 20px;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    margin-top: 5px;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m    border-radius: 5px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* Button hover effect */[m
+[32m+[m[32m.card button:hover {[m
+[32m+[m[32m    background-color: #45a049; /* Darker green */[m
+[32m+[m[32m}[m
+[32m+[m[41m    [m
+[32m+[m[41m   [m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <!-- Navigation bar -->[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 930px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m    <!-- Card container -->[m
+[32m+[m[32m    <div class="card-container">[m
+[32m+[m[32m        <!-- Cards -->[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <a href="Recharge.jsp">[m
+[32m+[m[32m                <img src="https://i.pinimg.com/originals/40/2b/32/402b32f46795c98778bebd73d0e5c8b7.jpg" alt="Image 1">[m
+[32m+[m[41m                [m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <button onclick="location.href='Recharge.jsp';">Recharge</button>[m
+[32m+[m[41m            [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <a href="TransactionView.jsp">[m
+[32m+[m[32m                <img src="https://t4.ftcdn.net/jpg/02/23/53/99/360_F_223539951_AUTIbUh1Ws1jD3Y1gCoAPnjQlOhcoVPp.jpg" alt="Image 2">[m
+[32m+[m[41m                [m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <button onclick="location.href='TransactionView.jsp';">Fund Transfer</button>[m
+[32m+[m[41m            [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <a href="BankStatement.jsp">[m
+[32m+[m[32m                <img src="https://previews.123rf.com/images/outchill/outchill1711/outchill171109543/89122448-bank-statement-text-on-round-vintage-rubber-stamp-sign-with-stars-blue-color.jpg" alt="Image 3">[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <button onclick="location.href='BankStatement.jsp';">Bank Statement</button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="card">[m
+[32m+[m[32m            <a href="Myprofile.jsp">[m
+[32m+[m[32m                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIRDxISEhIVERIVDw8SEhIRFhESERQSGBQcGRgYFhocIS4lHB44HxgZJkYmKy8xNTo4GiQ7QDs0PzA1NTEBDAwMEA8QGBISHjcsJSQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NzQ0NDQ0NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQIFBgcEA//EAEEQAAICAAIFCAYHBwQDAAAAAAABAgMEEQUGEiExQVFhcYGRodETIlNicrEHFyMyUqLBFBZCgpKy4TODo/BDY3P/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAgMEAQUG/8QALhEBAAIBAQUGBQUBAAAAAAAAAAECAxEEEiExURMUQWGR8DJxobHRQoHB4fEF/9oADAMBAAIRAxEAPwDswAAAAAAAAAAAAAAfOyyMIuUpKMUs3JtJLrbA+gNexuuGCqeXpfSPmpTmv6vu+JirfpCpX3aLJfE64/JssjFeeUJ7lujdgaPD6RKv4sPYvhlCXzyMng9dMFY8nOVT/wDbFxX9SzXiJw5I/SjNZhsoPjRfCyKlCcZxfCUWpRfU0fYrcAAAAAAAAAAAAAAAAAAAAAAAAAAAANL1x1kdWeHollY19pZHjBPki/xdPJ18JVrNp0hPHjm9t2Hr1h1srwzddSVty47/ALOHxNcX7q7Wjnuk9KX4mW1dZKW/dHhXHqity+Z5JFWb8eKtOXNvrhrSOHPqqyrLlGXIWQSiCTrPZ68BpC7Dz26bJVvlUX6svijwl2m/au66Qu2asSlVY8lGa3VzfT+F+HVwOcAhkxVyRx9VEu8pknPNTdZ3GUcNiJZwbUarJPfF8kJPm5FzcOroZ5uTHOO2kuROoACDoAAAAAAAAAAAAAAAAAAAAAw+smlP2XDTmstt+rWnyyfL1JZvsOTWzcpOUm5SbblJ7223vbNm18x/pMUq0/Upil/O98vDZXYzV2bsFdK69Xq7Ni3McT4zxUZVlmVZfCVlSrLFWSZrIJRBJ1RZYEEkmeyTqWpWmXicO4WPO2rZi2+M4ZerJ9PFPq6TlpmdVsf+z42ueeUJS9HZ8Mt3g8n2FWfHv0nrHJVE6S7AADylwAAAAAAAAAAAAAAAAAABVvIsefGPKqx81c3+Vgcex97susm3ntW2T7JSbXgzysn/AAQz1NNHv3jTgoyrLMqzsM9lSrLFWSZrIJRBJ1RZYEEkmeyRkCUdUWds0XiPS4emzlnVXJ9bimz2GF1Reej8N/8APLuk0jNHjWjS0x5r45AAIugAAAAAAAAAAAAAAAB8r4bUJR54td6yPqAOHzi4vJ8U8n1rcyjMvrPg/Q426PJKx2R+Gb2vm2uwxDPTidY1e9Nt6sW6qMqyzKslCiypVlirJM1kEkEo6oskkAkz2SWKnpwGFd91dUeM7Iw6k3vfdm+w7y4yos63q5V6PA4aL3P0FbfW1m/mZUpCCikluSSSXMlwLnizOszLRyAAcAAAAAAAAAAAAAAAAAAAafr5ot2UxxEFnKv1Z5cXW3x7H4NnPGdvnBSi01mmmmnwafFHLNaNBSwlucU3RJ/Zy3vZf4JPn5uddpr2fJ+mXobJm1r2c/swDKssyrNUL7KlWWKskzWQSQSjqiySQCTPZJvH0eaKbnPFTW6O1XVnyyf3pLs3drNc1f0NPGXKKzjCOTssy3QjzL3nyI67hcNCquFcFswhFRjFciRl2rLuxuRzn378kK146y+4APPWAAAAAAAAAAAAAAAAAAAAFJzSTbaSSzbe5JdLAuebF4SF1cq7IqcJLKUXy+RgNKa5YerONed81u9XdWn8T49mZ59Ca5QtlsXqNMm/Ukm/Rtcibf3X0vc+gs7K+m9ou7DLFd7T8+jXdYdVLcO5WVp208c0s5wXvJcV7y7cjWWd3zNc0vqjhcTnJRdM3v2q8km+eUeD8GXY9p8LLabTw0v6uUlWbbjdRMVD/TlC5cmT2J90t3iYizVnHR44azs2Zf2tmqMlJ5TCU3rPKWIJMtXqzjpcMNP+bZh/c0ZXBah4ueXpJQpXLm9ufdHd4nZyUjnMKLTDVTP6v6r3YtqbTqpz32SW+S5oL+Lr4dfA3XROpmFoalNO+ayediWwn0Q4d+Zsu7gZ8m1eFPVTLyaN0fXhqlXVHZiu2TfK5PlZ7TVdYtbq8NnCrK25bms36OHxNcX0LtyPPovXmmzKN8XRL8SznW+5Zru7TPGHJaN7RHeiODcgfKm6M4qcJRnFrNSi1KL6mj6lSQAAAAAAAAAAAAAAAAQGzTNZNadjOnDv1t6lasmo86hzvpJVrNp0hbhw3zW3aR/TL6d1iqwqcfv25bq4vhnwc3yLxOf6W03fiX9pPKOe6uGcYLs5X0s8E5NttvNtttve22+LKs248VafN7WLZceHlxnr+On381GVZLIZaWZjRGs2JwuUYyVla/8AHZm0l7r4x+XQblo7XXC2pKblRLmsXqZ9ElydeRzIqV2w0vxYsuGlp1dxw+JhZHahOM488GpLwPscHi3F5rc+dbn3o9cNMYqP3cRcv92zzKp2XpLJbBp4u2nzttjBbUpRiueTUV3s4tLTOLlxxNz/AN2zzPHZNzec25vnk3J97EbJPjKuaaOraR1ywdOaVjumv4aVtLtk/V8TTNM634nE5wg/QVvNbMG9uS96f6LI1wGimz0rx5/NXKSUQSjQos92jNK3YWW1TNw35yjxhL4o8H18ToWgNbasTswsypue5Jv1Jv3W+D6H4nMQVZMFMnPn1VxkmjuqJOdas62yr2acVJyhujG175Q6J88enivl0KMk0mnmmk01vTXOjzcuK2OdJaaXi8awuACtMAAAAAAAAIZJgtZ9LLDUZRf2k84w91cs+z5tHYiZnSE8eO2S8UrzliNbdYHHaw9L38LZx4rniuZ877DSGfSTzebebe9t7230lGbqVisaQ+nxYK4Kblf9nqoyGWZVliNnzZDJZDOs1lGVZZlWdhnsqVZYqyTPZBKIJOs9lgQSSZ7JJRBKOqLLAA6z2WNs1P1jdMo4e6X2UnlCbf8ApyfI3+F+HVw1Mk5ekXrNbKovNJ1h3JEmpakaad1f7PY87K4rZb4yr4drXDqyNtPHyUmlprL0qXi9YtAACCYAAAAApJ5LfuXOcu0/pB4jEyn/AAJ7MFzQTeT7ePab1rTi/RYOzJ5Of2Uf5lv/ACpnNDRgrzs93/kYNK2zT48I/n381GVZZlWaXp2VZRl2UZJmsoyGSyGdZ7KMqyzKs7DPZUqyxVkmayCSCUdUWSSASZ7JJRBKOqLLAA6z2WJIJJKLPVo/GTw91dsPvRlnlw2lwcX0NZo7Fhr42QhZF5xnGMovoazRxQ6L9H+N28NKpvfVP1fgnvX5tox7bj1rF+nv7rtkyaXmnX39m2gA816IAAAAA0nX2/fTXyJTm1z5vKPyl3moM2TXieeKiuaitd8pM1pm3F8EPrdirFdlxx5a+vFVlWWZVlid1WUZdlGSZrKMhkshnWeyjKssyrOwz2VKssVZJmsgkglHVFkkgEmeySUQSjqiywAOs9liSCSSiyTaNQb9nGOHJOqay96LUl4J95q5mNU57OkMP0zlHvhJFeaNcd48pQxW3clJ84dZRJBJ4r2gAAAABz7XmDWLjLkdMMuyUk/0NaZvOvODcqq7kt8JOEvhlvTfasv5jRmbMU60h9XsGSL7LSenD0/rSf3VZVlmVZatuqyjLsoyTNZRkMlkM6z2UZVlmVZ2GeypVlirJM1kEkEnVFkkkEkmeySUQSjqiywAOs9liSCSSiyTM6pVuWkMPlySnJ9SjL/Bhjcfo8wLdtl7Xqxj6OPTOTTl3JL+orz23cdp8vuhirvZKx56+joIAPFe0AAAAAPPi8PG2uVc1nGUXF9T5uk5ZpTATw9s65cc84vkcXwa/wC851sxWmtEV4qvZl6s1m4TXGL5uldBbiybs8eTfsG2d3tMW+Gfp5/n8w5YyrPfpTRduGns2RyWfqyWbjP4X+nE8DNkTrGr6CbRausTrEqsoyzIZJRZ82QyWQzrNZRlWWZVnYZ7KlWWKskzWQSiCTqiywIJJM9kkoglHVFlgAdZ7LEkHpwOBsxE1CqDnLdw4RXPJ8EulndYjjKieiuFw87bI1wjtSlLZiud/ouU67obR8cNRCmO/ZWcn+Kb3yfeY/VrV2GEhtSandJZSnyJfhj0dPKbAeZtOftJ3a8o+rbs+Dc1tbnIADK1AAAAAAAAPjfTCyLjOMZxfGMkpJ9jNcxupmHnvrlKl8yynHue/wATaQSra1eUrMebJi+C0x76cmgz1Ftz9W+DXSpR8z5vUS721f5/I6ECfbX6r+/Z58Y9Ic8/cS/21f5/Ir+4V/tq/wDk8jooO9vdGdryz4/Rzl6g3+2q/P5EP6P8R7arus8jo4Hb5OqM7Tkn/HN/q/xHtqu6zyKv6PcR7erun5HSgd7xk6oTlvLmv1eYj21XdZ5D6vcR7arus8jpQHecnX6IzeXNvq+xHtqu6zyJ+r7Ee2q7rPI6QDvecnuEZ4ucfV/iPbVd0/IfV/iPbVd0/I6OB3rL5eiO5DnP7gYj21XdPyLQ1Auz9a+tdUZvyOiAd6y9foh2NGnYLUOmDTtsnb7sfs4eGb8TZ8Jg66YKFUFCK5IrLPpfO+lnqBVfJe/xSlWla8oAAQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z" alt="Image 4">[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <button onclick="location.href='Myprofile.jsp';">my profile</button>[m
+[32m+[m[41m            [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/HomeView.jsp b/src/main/webapp/HomeView.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6cf00e9[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/HomeView.jsp[m
+[36m@@ -0,0 +1,89 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Insert title here</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    body {[m
+[32m+[m[32m        font-family: Arial, sans-serif;[m
+[32m+[m[32m        background-color: #0093E9;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    .topnav {[m
+[32m+[m[32m        overflow: hidden;[m
+[32m+[m[32m        background-color: white;[m
+[32m+[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    .topnav a {[m
+[32m+[m[32m        float: left;[m
+[32m+[m[32m        display: block;[m
+[32m+[m[32m        color: black;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        padding: 14px 20px;[m
+[32m+[m[32m        text-decoration: none;[m
+[32m+[m[32m        font-size: 17px;[m
+[32m+[m[32m        margin-left:250px;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    .card {[m
+[32m+[m[32m        width: 200px;[m[41m [m
+[32m+[m[32m        background-color: #ffffff;[m
+[32m+[m[32m        border-radius: 10px;[m
+[32m+[m[32m        padding: 10px;[m
+[32m+[m[32m        margin: 20px 40px;[m[41m [m
+[32m+[m[32m        margin-left:320px;[m
+[32m+[m[32m        margin-top:200px;[m
+[32m+[m[32m        float: left;[m[41m [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    .card a {[m
+[32m+[m[32m        display: block;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        padding: 5px;[m
+[32m+[m[32m        background-color: #0093E9;[m
+[32m+[m[32m        color: #ffffff;[m
+[32m+[m[32m        text-decoration: none;[m
+[32m+[m[32m        border-radius: 5px;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    .card img {[m
+[32m+[m[32m        width: 100%; /* Make the image fill the card */[m
+[32m+[m[32m        border-radius: 10px; /* Add border-radius to match card */[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 955px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m<div class="card">[m
+[32m+[m[32m    <img src="https://static.vecteezy.com/system/resources/previews/027/381/946/original/glossy-register-now-button-register-here-register-now-badge-emblem-seal-push-button-realistic-3d-shiny-registration-button-reflection-design-element-isolated-on-white-background-vector.jpg" alt="Image">[m
+[32m+[m[32m    <a href="RegisterView.jsp">Register</a>[m
+[32m+[m[32m</div>[m
+[32m+[m
+[32m+[m[32m<div class="card">[m
+[32m+[m[32m    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/731/093/small_2x/login-icon-vector.jpg" alt="Image">[m
+[32m+[m[32m    <a href="Login.jsp">Login</a>[m
+[32m+[m[32m</div>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/Login.jsp b/src/main/webapp/Login.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..16e6230[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Login.jsp[m
+[36m@@ -0,0 +1,91 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Login Page</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 50px 580px 0px 550px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn{[m
+[32m+[m[32m        margin-left: 80px;[m
+[32m+[m[32m        border: 1px solid ;[m
+[32m+[m[32m        background:red;[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<script type="text/javascript">[m
+[32m+[m	[32mfunction clear(){[m
+[32m+[m		[32mwindow.onload=clearFields;[m
+[32m+[m	[32m}[m
+[32m+[m[32m</script>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <body>[m
+[32m+[m[32m        <!-- <center><h1 style="padding-top: 30px; font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-mobile"> Recharge </i></h1></center> -->[m
+[32m+[m[32m       <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 990px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m        <div class="parent">[m
+[32m+[m[32m            <h1>Login Here!!!</h1>[m
+[32m+[m[32m            <form action="LoginController" style="padding-top: 20px;">[m
+[32m+[m[32m                <div class="form-group">[m
+[32m+[m[32m                        <label class="control-label col-sm-7" for="number"><i class="fa-solid fa-user"></i> Account Number:</label>[m
+[32m+[m[32m                    <div class="col-sm-9">[m
+[32m+[m[32m                        <input type="text" class="form-control" name="accNo" required placeholder="Account Number"><br>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="formgroup">[m
+[32m+[m[32m                        <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-lock"></i> Password:</label>[m
+[32m+[m[32m                    <div class="col-sm-9">[m
+[32m+[m[32m                        <input type="text" class="form-control" name="pass" required placeholder="Password"><br>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <button class="btn" type="submit">Login</button>[m
+[32m+[m[32m            </form>[m
+[32m+[m[41m              [m
+[32m+[m[32m    <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("invalid");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[32m  </p>[m
+[32m+[m[41m            [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/META-INF/MANIFEST.MF b/src/main/webapp/META-INF/MANIFEST.MF[m
+[1mnew file mode 100644[m
+[1mindex 0000000..254272e[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/META-INF/MANIFEST.MF[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m[32mManifest-Version: 1.0[m
+[32m+[m[32mClass-Path:[m[41m [m
+[32m+[m
+[1mdiff --git a/src/main/webapp/Myprofile.jsp b/src/main/webapp/Myprofile.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ba00e4e[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Myprofile.jsp[m
+[36m@@ -0,0 +1,132 @@[m
+[32m+[m[32m<%@page import="project.model.Customer"%>[m
+[32m+[m[32m<%@page import="java.util.List"%>[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>User Profile</title>[m
+[32m+[m[32m<!-- Include Bootstrap for easy styling -->[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m  /* Gradient background */[m
+[32m+[m[32m  body {[m
+[32m+[m[32m    background-color: #0093E9;[m
+[32m+[m[32m    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Profile card styling */[m
+[32m+[m[32m  .profile-card {[m
+[32m+[m[32m    max-width: 600px;[m
+[32m+[m[32m    margin: 50px auto;[m
+[32m+[m[32m    padding: 20px;[m
+[32m+[m[32m    background-color: white;[m
+[32m+[m[32m    border-radius: 10px;[m
+[32m+[m[32m    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Profile title styling */[m
+[32m+[m[32m  .profile-title {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    font-size: 24px;[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m    margin-bottom: 20px;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Profile data styling */[m
+[32m+[m[32m  .profile-data {[m
+[32m+[m[32m    margin-bottom: 20px;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .profile-field {[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: space-between;[m
+[32m+[m[32m    padding: 10px 0;[m
+[32m+[m[32m    border-bottom: 1px solid #ddd;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .profile-label {[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  /* Profile action styling */[m
+[32m+[m[32m  .profile-actions {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  .btn {[m
+[32m+[m[32m    margin: 10px;[m
+[32m+[m[32m  }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 990px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m<div class="profile-card">[m
+[32m+[m[32m  <h2 class="profile-title">User Profile</h2>[m
+[32m+[m[32m  <div class="profile-data">[m
+[32m+[m[32m   <%! List<Customer>custList=null;[m
+[32m+[m			[32mCustomer c=null;[m
+[32m+[m		[32m%>[m
+[32m+[m		[32m<%[m
+[32m+[m			[32mcustList=(List<Customer>)session.getAttribute("user");[m
+[32m+[m			[32mc=custList.get(0);[m
+[32m+[m[41m			[m
+[32m+[m[41m			[m
+[32m+[m		[32m%>[m
+[32m+[m[32m    <div class="profile-field">[m
+[32m+[m[32m      <span class="profile-label">Customer Name:</span>[m
+[32m+[m[32m      <span><%= c.getCustName() %></span>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="profile-field">[m
+[32m+[m[32m      <span class="profile-label">Account Number:</span>[m
+[32m+[m[32m      <span><%= c.getAccNo() %></span>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="profile-field">[m
+[32m+[m[32m      <span class="profile-label">Account Balance</span>[m
+[32m+[m[32m      <span><%=c.getAccBal() %></span>[m
+[32m+[m[32m    </div>[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[41m   [m
+[32m+[m[32m  </div>[m
+[32m+[m[32m  <div class="profile-actions">[m
+[32m+[m[32m    <a href="ChangePasswordView.jsp" class="btn btn-primary">Change Password</a>[m
+[32m+[m[32m    <form action="LogOutController" method="post" style="display:inline;">[m
+[32m+[m[32m      <button type="submit" class="btn btn-danger">Logout</button>[m
+[32m+[m[32m    </form>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("changePass");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[41m    [m
+[32m+[m[32m  </div>[m
+[32m+[m[32m</div>[m
+[32m+[m[32m<!-- Include optional Bootstrap scripts -->[m
+[32m+[m[32m<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>[m
+[32m+[m[32m<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/Neft.jsp b/src/main/webapp/Neft.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c98c7a9[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Neft.jsp[m
+[36m@@ -0,0 +1,111 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="UTF-8">[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m  <title>neft</title>[m
+[32m+[m[32m  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m  <style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 20px 500px 0px 550px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn-grad {[m
+[32m+[m[32m            background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);[m
+[32m+[m[32m            margin: 80px;[m
+[32m+[m[32m            padding: 15px 45px;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            text-transform: uppercase;[m
+[32m+[m[32m            transition: 0.5s;[m
+[32m+[m[32m            background-size: 200% auto;[m
+[32m+[m[32m            color: white;[m[41m            [m
+[32m+[m[32m            box-shadow: 0 0 20px #eee;[m
+[32m+[m[32m            border-radius: 10px;[m
+[32m+[m[32m            display: block;[m
+[32m+[m[32m          }[m
+[32m+[m
+[32m+[m[32m          .btn-grad:hover {[m
+[32m+[m[32m            background-position: right center; /* change the direction of the change here */[m
+[32m+[m[32m            color: #fff;[m
+[32m+[m[32m            text-decoration: none;[m
+[32m+[m[32m          }[m
+[32m+[m[32m  </style>[m
+[32m+[m[32m   <script type="text/javascript">[m
+[32m+[m[32m  function clear(){[m
+[32m+[m		[32mwindow.onload=clearFields;[m
+[32m+[m	[32m}[m
+[32m+[m[32m  </script>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m      <body>[m
+[32m+[m[32m        <div style="background-color: grey;">[m
+[32m+[m[32m          <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m              <div class="container-fluid">[m
+[32m+[m[32m                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 955px;">[m
+[32m+[m[32m                  <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Help</a>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m         </div>[m
+[32m+[m[32m         <div class="parent">[m
+[32m+[m[32m          <form action="NeftController">[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="text"><i class="fa-solid fa-file-invoice"></i> Account Number :</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="toAcNo" required placeholder=" Account Number :"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="formgroup">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-file-invoice"></i>Ifsc Code:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="number" class="form-control" name="ifsc" required placeholder="Ifsc Code"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                  <label class="control-label col-sm-7"><i class="fa-solid fa-building-columns"></i> Branch:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="branch" required placeholder="Branch"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m[41m [m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label class="control-label col-sm-7"><i class="fa-solid fa-sack-dollar"></i> Amount:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="ammount" required placeholder="Amount"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m[41m [m
+[32m+[m[32m              <button class="btn-grad" type="submit">Transfer</button>[m
+[32m+[m[32m          </form>[m
+[32m+[m[32m             <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("neftError");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[41m      [m
+[32m+[m[32m      </div>[m
+[32m+[m[41m      [m
+[32m+[m[41m   [m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/Recharge.jsp b/src/main/webapp/Recharge.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0602669[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/Recharge.jsp[m
+[36m@@ -0,0 +1,89 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<title>Recharge page</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 50px 550px 0px 550px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn{[m
+[32m+[m[32m        margin-left: 80px;[m
+[32m+[m[32m        border: 1px solid ;[m
+[32m+[m[32m        background:red;[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m	[32m<!-- <center><h1 style="padding-top: 30px; font-family: Arial, Helvetica, sans-serif;"><i class="fa-solid fa-mobile"> Recharge </i></h1></center> -->[m
+[32m+[m[32m   <div style="background-color: grey;">[m
+[32m+[m[32m    <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m        <div class="container-fluid">[m
+[32m+[m[32m            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 990px;">[m
+[32m+[m[32m            <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m              <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m              <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m              <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m              <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Help</a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </nav>[m
+[32m+[m[32m   </div>[m
+[32m+[m[32m    <div class="parent">[m
+[32m+[m[32m        <form action="RechargeController">[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                    <label class="control-label col-sm-7" for="number"><i class="fa-solid fa-mobile-retro"></i> Mobile No:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="number" class="form-control" name="mobNo" required placeholder="Mob no"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="formgroup">[m
+[32m+[m[32m                    <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-sack-dollar"></i> Amount:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="number" class="form-control" name="Ammount" required placeholder="Amount"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label class="control-label col-sm-7"><i class="fa-solid fa-sim-card"></i> Sim:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="Service" required placeholder="Telecom Company"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m[41m [m
+[32m+[m[32m            <button class="btn" type="submit">Recharge</button>[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m          <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("rechargeError");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: green'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[32m  </p>[m
+[32m+[m[41m        [m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/RegisterView.jsp b/src/main/webapp/RegisterView.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd62315[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/RegisterView.jsp[m
+[36m@@ -0,0 +1,104 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="ISO-8859-1">[m
+[32m+[m[32m<title>Insert title here</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 30px 550px 0px 550px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn{[m
+[32m+[m[32m        margin-left: 80px;[m
+[32m+[m[32m        border: 1px solid ;[m
+[32m+[m[32m        background:red;[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    h2 {[m
+[32m+[m[32m        text-align: center; /* Center align the heading */[m
+[32m+[m[32m        padding: 20px 0px 0px 0px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m <script type="text/javascript">[m
+[32m+[m[32m  function clear(){[m
+[32m+[m		[32mwindow.onload=clearFields;[m
+[32m+[m	[32m}[m
+[32m+[m[32m  </script>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 930px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Conactus" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m    <h2>Register Here !!!</h2>[m
+[32m+[m[32m    <div class="parent">[m
+[32m+[m[32m        <form action="RegisterController">[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                    <label class="control-label col-sm-8" for="number"><i class="fa-solid fa-user"></i> Account Holder Name:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="custName" required placeholder="Account Holder Name"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="formgroup">[m
+[32m+[m[32m                    <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-circle-user"></i> Account Number:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="accNo" required placeholder="Account Number"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label class="control-label col-sm-7"><i class="fa-solid fa-lock"></i> Password:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="password" required placeholder="Password"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m[41m [m
+[32m+[m[32m            <div class="form-group">[m
+[32m+[m[32m                <label class="control-label col-sm-8"><i class="fa-solid fa-sack-dollar"></i> Account Opening Bal:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="accBal" required placeholder="Account Opening Bal"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m[41m [m
+[32m+[m[32m            <button class="btn" type="submit">Register</button>[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m        <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("register");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[41m        [m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/RtgsView.jsp b/src/main/webapp/RtgsView.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0742836[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/RtgsView.jsp[m
+[36m@@ -0,0 +1,109 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="UTF-8">[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m  <title>rtgs</title>[m
+[32m+[m[32m  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m  <style>[m
+[32m+[m[32m    *{[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m    }[m
+[32m+[m	[32mbody{[m
+[32m+[m[32m        background-color: #0093e9;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .parent{[m
+[32m+[m[32m        padding: 30px 5px 20px 60px; */[m
+[32m+[m[32m        font-family: Arial, Helvetica, sans-serif;[m
+[32m+[m[32m        font-size: 1.3rem;[m
+[32m+[m[32m        font-weight: 600;[m
+[32m+[m[32m        border: 2px solid black;[m
+[32m+[m[32m        border-radius: 5%;[m
+[32m+[m[32m        background-color: #eaf6f6;[m
+[32m+[m[32m        margin: 50px 500px 0px 500px;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .btn-grad {[m
+[32m+[m[32m            background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);[m
+[32m+[m[32m            margin: 100px;[m
+[32m+[m[32m            padding: 15px 45px;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            text-transform: uppercase;[m
+[32m+[m[32m            transition: 0.5s;[m
+[32m+[m[32m            background-size: 200% auto;[m
+[32m+[m[32m            color: white;[m[41m            [m
+[32m+[m[32m            box-shadow: 0 0 20px #eee;[m
+[32m+[m[32m            border-radius: 10px;[m
+[32m+[m[32m            display: block;[m
+[32m+[m[32m          }[m
+[32m+[m
+[32m+[m[32m          .btn-grad:hover {[m
+[32m+[m[32m            background-position: right center; /* change the direction of the change here */[m
+[32m+[m[32m            color: #fff;[m
+[32m+[m[32m            text-decoration: none;[m
+[32m+[m[32m          }[m
+[32m+[m[32m  </style>[m
+[32m+[m[32m   <script type="text/javascript">[m
+[32m+[m[32m  function clear(){[m
+[32m+[m		[32mwindow.onload=clearFields;[m
+[32m+[m	[32m}[m
+[32m+[m[32m  </script>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m      <body>[m
+[32m+[m[32m        <div style="background-color: grey;">[m
+[32m+[m[32m          <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m              <div class="container-fluid">[m
+[32m+[m[32m                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 10px;" alt="img">[m
+[32m+[m[32m                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 900px;">[m
+[32m+[m[32m                  <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                    <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                    <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Conactus" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                    <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </nav>[m
+[32m+[m[32m         </div>[m
+[32m+[m[32m         <div class="parent">[m
+[32m+[m[32m          <form action="RtgsController">[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="text"><i class="fa-solid fa-user"></i> Account Number</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="toAcNo" required placeholder="Account Number"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="formgroup">[m
+[32m+[m[32m                      <label class="control-label col-sm-7" for="amount"><i class="fa-solid fa-file-invoice"></i>Ifsc :</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="number" class="form-control" name="ifsc" required placeholder="Ifsc-Code"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                  <label class="control-label col-sm-7"><i class="fa-solid fa-key"></i>Branch:</label>[m
+[32m+[m[32m                  <div class="col-sm-9">[m
+[32m+[m[32m                      <input type="text" class="form-control" name="branch" required placeholder="Branch"><br>[m
+[32m+[m[32m                  </div>[m
+[32m+[m[32m              </div>[m[41m [m
+[32m+[m[32m              <div class="form-group">[m
+[32m+[m[32m                <label class="control-label col-sm-7"><i class="fa-solid fa-sack-dollar"></i> Ammount:</label>[m
+[32m+[m[32m                <div class="col-sm-9">[m
+[32m+[m[32m                    <input type="text" class="form-control" name="ammount" required placeholder="Ammount"><br>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m[41m [m
+[32m+[m[32m              <button class="btn-grad" type="submit">Transfer</button>[m
+[32m+[m[32m          </form>[m
+[32m+[m[32m             <%[m
+[32m+[m	[32m String str=(String)session.getAttribute("RtgsError");[m
+[32m+[m	[32m%>[m
+[32m+[m	[32m<p style='color: red'>[m
+[32m+[m[32m    <%[m
+[32m+[m[32m      if (str != null && !session.isNew()) {[m
+[32m+[m[32m        out.println(str);[m
+[32m+[m[32m      }[m[41m [m
+[32m+[m[32m    %>[m
+[32m+[m[41m      [m
+[32m+[m[32m      </div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/TransactionView.jsp b/src/main/webapp/TransactionView.jsp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1cc1113[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/webapp/TransactionView.jsp[m
+[36m@@ -0,0 +1,102 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="ISO-8859-1">[m
+[32m+[m[32m<title>Insert title here</title>[m
+[32m+[m[32m<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">[m
+[32m+[m[32m<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">[m
+[32m+[m[32m<style>[m
+[32m+[m[32mbody{[m
+[32m+[m	[32mbackground-color:  #0093E9;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card {[m
+[32m+[m[32m    margin-bottom: 20px;[m
+[32m+[m[32m    border:2px solid grey; /* Add space between cards */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card img {[m
+[32m+[m[32m    height: 200px; /* Set a fixed height for the card images */[m
+[32m+[m[32m    object-fit: cover; /* Maintain aspect ratio and cover the container */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card-body {[m
+[32m+[m[32m    background-color: #f8f9fa; /* Set background color for card body */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card-title {[m
+[32m+[m[32m    margin-bottom: 10px; /* Add space below card title */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.card-text {[m
+[32m+[m[32m    font-size: 14px; /* Adjust font size for card text */[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32m.navbar-nav {[m
+[32m+[m[32m     margin-left: 250px; /* Push navbar items to the right[m[41m [m
+[32m+[m[32m} */[m
+[32m+[m
+[32m+[m[32m.container {[m
+[32m+[m[32m    min-height: 100vh; /* Set container minimum height to 100% viewport height */[m
+[32m+[m[32m    display: flex; /* Use flexbox for vertical alignment */[m
+[32m+[m[32m    justify-content: center; /* Center content horizontally */[m
+[32m+[m[32m    align-items: center; /* Center content vertically */[m
+[32m+[m[32m}[m
+[32m+[m[32m.navbar-nav .nav-link {[m
+[32m+[m[32m    color: black !important; /* Set color to black */[m
+[32m+[m	[32m /* margin-left: 250px; */[m
+[32m+[m[32m}[m
+[32m+[m[32m</style>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div style="background-color: grey;">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg bg-body-tertiary">[m
+[32m+[m[32m            <div class="container-fluid">[m
+[32m+[m[32m                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpNOa28LDU8ww4UAGZehe5aAtUlbfjmJZTzyaxFKp-w&s style="width: 4%;height: 2%; padding-left: 20px;" alt="img">[m
+[32m+[m[32m              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 955px;">[m
+[32m+[m[32m                <div class="navbar-nav" style="padding-left:20px;">[m
+[32m+[m[32m                  <a class="nav-link" href="HomeView.jsp" style="color: black; font-weight: 600; font-size: 1.3rem;"><i class="fa-solid fa-house"></i> Home</a>[m
+[32m+[m[32m                  <a class="nav-link" href="About.jsp" style="color:black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-magnifying-glass"></i> About Us</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Contactus.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-headphones"></i> Contact</a>[m
+[32m+[m[32m                  <a class="nav-link" href="Dashboard.jsp" style="color: black;font-weight: 600;font-size: 1.3rem;"><i class="fa-solid fa-handshake-angle"></i> Dashboard</a>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m       </div>[m
+[32m+[m[32m<div class="container">[m
+[32m+[m[32m    <div class="row justify-content-center">[m
+[32m+[m[32m        <div class="col-sm-4">[m
+[32m+[m[32m            <div class="card">[m
+[32m+[m[32m                <img class="card-img-top" src="https://static.javatpoint.com/terms/images/neft-national-electronic-funds-transfer.png" alt="NEFT">[m
+[32m+[m[32m                <div class="card-body text-center"> <!-- Added text-center class -->[m
+[32m+[m[32m                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>[m
+[32m+[m[32m                    <a href="Neft.jsp" class="btn btn-primary d-flex justify-content-center">NEFT</a> <!-- Added d-flex and justify-content-center classes -->[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="col-sm-4">[m
+[32m+[m[32m            <div class="card">[m
+[32m+[m[32m                <img class="card-img-top" src="https://www.banasbank.com/Content/banasbank.com/UploadedImage/RealImage/232RTGS.png" alt="Card image cap">[m
+[32m+[m[32m                <div class="card-body text-center" style="padding-top: 39px;"> <!-- Added text-center class -->[m
+[32m+[m[32m                    <p class="card-text">"Never try to place STOP PAYMENT on a reality check!"</p>[m
+[32m+[m[32m                    <a href="RtgsView.jsp" class="btn btn-primary d-flex justify-content-center">RTGS</a> <!-- Added d-flex and justify-content-center classes -->[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="col-sm-4">[m
+[32m+[m[32m            <div class="card">[m
+[32m+[m[32m                <img class="card-img-top" src="https://dth95m2xtyv8v.cloudfront.net/tesseract/assets/blog/Cards_Cover_Pic_07b9e32095.png" alt="CREDITCARD">[m
+[32m+[m[32m                <div class="card-body text-center"> <!-- Added text-center class -->[m
+[32m+[m[32m                    <p class="card-text">Procrastination is like a credit card: it's a lot of fun until you get the bill.</p>[m
+[32m+[m[32m                    <a href="CardPayment.jsp" class="btn btn-primary d-flex justify-content-center">Card Payment</a> <!-- Added d-flex and justify-content-center classes -->[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</div>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/webapp/WEB-INF/lib/ojdbc14.jar b/src/main/webapp/WEB-INF/lib/ojdbc14.jar[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0aa1b51[m
+Binary files /dev/null and b/src/main/webapp/WEB-INF/lib/ojdbc14.jar differ
+[1mdiff --git a/src/main/webapp/WEB-INF/lib/poi-3.0-rc4-20070503.jar b/src/main/webapp/WEB-INF/lib/poi-3.0-rc4-20070503.jar[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ac4b421[m
+Binary files /dev/null and b/src/main/webapp/WEB-INF/lib/poi-3.0-rc4-20070503.jar differ
+[1mdiff --git a/src/main/webapp/WEB-INF/lib/poi-contrib-3.0-rc4-20070503.jar b/src/main/webapp/WEB-INF/lib/poi-contrib-3.0-rc4-20070503.jar[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2857c85[m
+Binary files /dev/null and b/src/main/webapp/WEB-INF/lib/poi-contrib-3.0-rc4-20070503.jar differ
+[1mdiff --git a/src/main/webapp/WEB-INF/lib/poi-scratchpad-3.0-rc4-20070503.jar b/src/main/webapp/WEB-INF/lib/poi-scratchpad-3.0-rc4-20070503.jar[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ad46150[m
+Binary files /dev/null and b/src/main/webapp/WEB-INF/lib/poi-scratchpad-3.0-rc4-20070503.jar differ
